@@ -1,0 +1,7 @@
+parameters:
+#    sys_crunch_store.example.class: SysCrunch\StoreBundle\Example
+
+services:
+#    sys_crunch_store.example:
+#        class: %sys_crunch_store.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

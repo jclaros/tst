@@ -1,0 +1,1629 @@
+/* Welcome to Compass.
+* In this file you should write your main styles. (or centralize your imports)
+* Import this file using the following HTML or equivalent:
+* <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*
+Mixins are fomething like functions for sass
+*/
+/**
+ * short to define calc
+ */
+/** Simple modifications needed for DropDownCheckList to take advantage of ThemeRoller settings */
+/* line 3, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist .ui-widget-content
+, .ui-dropdownchecklist .ui-widget-header {
+  border: none;
+}
+
+/* line 6, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-indent {
+  padding-left: 7px;
+}
+
+/* Font size of 0 on the -selector and an explicit medium on -text required to eliminate
+   descender problems within the containers and still have a valid size for the text */
+/* line 12, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-selector-wrapper
+, .ui-widget.ui-dropdownchecklist-selector-wrapper {
+  vertical-align: middle;
+  font-size: 0px;
+}
+
+/* line 16, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-selector {
+  padding: 1px 2px 2px 2px;
+  font-size: 0px;
+}
+
+/* line 20, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-text {
+  font-size: medium;
+}
+
+/* line 24, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-item
+, .ui-dropdownchecklist-item input {
+  vertical-align: middle;
+}
+
+/* line 27, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-group {
+  padding: 1px 2px 2px 2px;
+}
+
+/* line 9, assetic_compass5IwFcD.scss */
+html {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 14, assetic_compass5IwFcD.scss */
+body {
+  font-family: Corbel, Arial, Helvetica, "Nimbus Sans L", "Liberation Sans", sans-serif;
+  background-image: url(/bundles/syscrunchstore/images/background.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 690px;
+  background-attachment: scroll;
+  background-color: #7CD0FC;
+  margin: 0;
+}
+
+/* line 25, assetic_compass5IwFcD.scss */
+body.innerpage {
+  padding: 0;
+  margin: 0;
+  background: #A1DCFE;
+  background: -moz-linear-gradient(top, #a1dcfe 0%, white 30%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a1dcfe), color-stop(30%, white));
+  background: -webkit-linear-gradient(top, #a1dcfe 0%, white 30%);
+  background: -o-linear-gradient(top, #a1dcfe 0%, white 30%);
+  background: -ms-linear-gradient(top, #a1dcfe 0%, white 30%);
+  background: linear-gradient(to bottom, #a1dcfe 0%, #ffffff 30%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a1dcfe', endColorstr='#ffffff', GradientType=0);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: 100% 600px;
+  background-color: #FFFFFF;
+}
+/* line 40, assetic_compass5IwFcD.scss */
+body.innerpage #home_header .line {
+  margin: 20px auto 0px;
+}
+/* line 43, assetic_compass5IwFcD.scss */
+body.innerpage #content {
+  background: none;
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 50, assetic_compass5IwFcD.scss */
+a {
+  text-decoration: none;
+  color: #82D3FF;
+}
+/* line 53, assetic_compass5IwFcD.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 58, assetic_compass5IwFcD.scss */
+.clear {
+  clear: both;
+}
+
+/* line 62, assetic_compass5IwFcD.scss */
+.hidden, .preloader {
+  display: none;
+}
+
+/* line 66, assetic_compass5IwFcD.scss */
+.visible-hidden {
+  position: absolute;
+  top: -5000px;
+}
+
+/* line 71, assetic_compass5IwFcD.scss */
+#home_header {
+  position: relative;
+  min-height: 100%;
+}
+/* line 74, assetic_compass5IwFcD.scss */
+#home_header .line {
+  display: block;
+  width: 697px;
+  height: 1px;
+  margin: 70px auto 0px;
+  border-bottom: 1px solid #444444;
+  box-shadow: 0px 1px 1px white;
+}
+/* line 82, assetic_compass5IwFcD.scss */
+#home_header h1 {
+  width: 670px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Corbel, Arial, Helvetica, "Nimbus Sans L", "Liberation Sans", sans-serif;
+  font-size: 62.5px;
+  color: #444444;
+  line-height: 60px;
+  letter-spacing: 11px;
+  cursor: pointer;
+  text-shadow: -1px -1px 0 #EEEEEE, 1px -1px 0 #FFFFFF, -1px 1px 0 #EEEEEE, 1px 1px 0 #FFFFFF;
+}
+/* line 94, assetic_compass5IwFcD.scss */
+#home_header h1 + .line {
+  margin-top: 0px;
+}
+/* line 98, assetic_compass5IwFcD.scss */
+#home_header h2 {
+  width: 624px;
+  margin: 5px auto 1em;
+  text-align: center;
+  font-family: Corbel, Arial, Helvetica, "Nimbus Sans L", "Liberation Sans", sans-serif;
+  font-size: 22.92px;
+  color: #333333;
+}
+/* line 105, assetic_compass5IwFcD.scss */
+#home_header h2 strong {
+  color: #044068;
+}
+/* line 109, assetic_compass5IwFcD.scss */
+#home_header .main-stamp {
+  margin: 42px auto 0px;
+  width: 524px;
+  height: 292px;
+  position: relative;
+  background-image: url(/bundles/syscrunchstore/images/main-stamp.png);
+  background-repeat: no-repeat;
+  padding: 44px 47px 56px 44px;
+  z-index: 200;
+}
+/* line 118, assetic_compass5IwFcD.scss */
+#home_header .main-stamp .logo-wordpress {
+  position: absolute;
+  top: -55px;
+  left: 50%;
+  margin-left: -125px;
+  background-image: url(/bundles/syscrunchstore/images/logo-wordpress.png);
+  width: 115px;
+  height: 115px;
+  z-index: 700;
+}
+/* line 128, assetic_compass5IwFcD.scss */
+#home_header .main-stamp .logo-html5 {
+  position: absolute;
+  top: -68px;
+  left: 50%;
+  margin-left: 70px;
+  background-image: url(/bundles/syscrunchstore/images/logo-html5.png);
+  width: 118px;
+  height: 128px;
+  z-index: 700;
+}
+/* line 138, assetic_compass5IwFcD.scss */
+#home_header .main-stamp .main-stamp-content {
+  position: relative;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+}
+/* line 143, assetic_compass5IwFcD.scss */
+#home_header .main-stamp .main-stamp-content .stamp-content {
+  position: absolute;
+  top: 36px;
+  left: 16px;
+  background-color: #99CCFF;
+  width: 238px;
+  height: 196px;
+}
+/* line 150, assetic_compass5IwFcD.scss */
+#home_header .main-stamp .main-stamp-content .stamp-content + .stamp-content {
+  left: auto;
+  right: 14px;
+}
+/* line 154, assetic_compass5IwFcD.scss */
+#home_header .main-stamp .main-stamp-content .stamp-content h2 {
+  width: auto;
+  line-height: 37px;
+  margin: 0;
+  font-weight: bold;
+}
+/* line 160, assetic_compass5IwFcD.scss */
+#home_header .main-stamp .main-stamp-content .stamp-content a {
+  display: block;
+  text-align: center;
+}
+
+/* line 169, assetic_compass5IwFcD.scss */
+.stamps-background, .small-stamps .stamps {
+  display: none;
+}
+
+/* line 173, assetic_compass5IwFcD.scss */
+.registration {
+  white-space: nowrap;
+  width: 360px;
+  height: 105px;
+  margin: 0 auto 20px;
+  padding: 10px 0;
+  background-image: url(/bundles/syscrunchstore/images/registration-text.png);
+  background-repeat: no-repeat;
+  background-position: 45px 0px;
+  text-align: center;
+  position: relative;
+  z-index: 200;
+}
+
+/* line 187, assetic_compass5IwFcD.scss */
+.registration .facebook-register {
+  display: inline-block;
+  background-image: url(/bundles/syscrunchstore/images/facebook.png);
+  width: 53px;
+  height: 54px;
+}
+
+/* line 194, assetic_compass5IwFcD.scss */
+.registration .twitter-register {
+  display: inline-block;
+  background-image: url(/bundles/syscrunchstore/images/twitter.png);
+  width: 56px;
+  height: 55px;
+}
+
+/* line 201, assetic_compass5IwFcD.scss */
+.registration .email-register {
+  display: inline-block;
+  background-image: url(/bundles/syscrunchstore/images/email.png);
+  width: 55px;
+  height: 55px;
+}
+
+/* line 208, assetic_compass5IwFcD.scss */
+#home_header .registration h1 {
+  height: 25px;
+}
+
+/* line 212, assetic_compass5IwFcD.scss */
+#home_header .registration h2 {
+  font-size: 18.75px;
+  width: auto;
+}
+
+/* line 217, assetic_compass5IwFcD.scss */
+.content-divider {
+  height: 4px;
+  background-image: url(/bundles/syscrunchstore/images/content-divider.png);
+}
+
+/* line 222, assetic_compass5IwFcD.scss */
+.concept {
+  height: 134px;
+  padding: 32px 20% 0;
+  position: relative;
+  z-index: 200;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Corbel, Arial, Helvetica, "Nimbus Sans L", "Liberation Sans", sans-serif;
+  font-size: 29.17px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.45);
+  text-align: center;
+  background-image: url(/bundles/syscrunchstore/images/concept.jpg);
+  background-size: 100% 166px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* line 240, assetic_compass5IwFcD.scss */
+#content {
+  background-color: white;
+}
+
+/* line 244, assetic_compass5IwFcD.scss */
+.buyer {
+  padding-top: 370px;
+  padding-bottom: 35px;
+  background-image: url(/bundles/syscrunchstore/images/buyer-background.png);
+  background-position: 50% 25px;
+  background-repeat: no-repeat;
+}
+
+/* line 252, assetic_compass5IwFcD.scss */
+.role-description {
+  text-align: center;
+}
+
+/* line 256, assetic_compass5IwFcD.scss */
+.role-description .content-container {
+  width: 990px;
+  margin: 0 auto;
+}
+
+/* line 261, assetic_compass5IwFcD.scss */
+.role-description .content-separator {
+  font-size: 50px;
+  font-weight: bold;
+  color: #99CCFF;
+  text-transform: uppercase;
+  padding: 115px 25px 0;
+  float: left;
+}
+
+/* line 270, assetic_compass5IwFcD.scss */
+.role-description .content {
+  font-family: "Corbel Regular", Corbel, Arial, Helvetica, sans-serif;
+  float: left;
+  width: 430px;
+  height: 330px;
+  background-image: url(/bundles/syscrunchstore/images/buyer-publisher-box.gif);
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* line 281, assetic_compass5IwFcD.scss */
+.role-description .content h1 {
+  font-size: 37.5px;
+  color: #FFFFFF;
+  margin: 30px 0;
+}
+
+/* line 287, assetic_compass5IwFcD.scss */
+.role-description .content p {
+  margin: 0 60px 40px;
+  text-align: left;
+  font-size: 18.75px;
+  color: #003366;
+}
+
+/* line 294, assetic_compass5IwFcD.scss */
+.role-description .content ul {
+  list-style: none;
+  padding: 0 70px;
+  margin: -20px 0 0;
+}
+
+/* line 300, assetic_compass5IwFcD.scss */
+.role-description .content ul li {
+  text-align: left;
+  color: #003366;
+  font-size: 18.75px;
+  padding: 0 20px 0 20px;
+  text-indent: -1.5em;
+}
+
+/* line 308, assetic_compass5IwFcD.scss */
+.role-description .content ul li:before {
+  display: inline-block;
+  width: 1em;
+  text-align: center;
+  font-size: 1.5em;
+  content: "\2022";
+  color: white;
+}
+
+/* line 317, assetic_compass5IwFcD.scss */
+.content-divider-2 {
+  background-image: url(/bundles/syscrunchstore/images/content-divider-2.png);
+  height: 9px;
+}
+
+/* line 322, assetic_compass5IwFcD.scss */
+.publisher {
+  padding-top: 335px;
+  padding-bottom: 40px;
+  background-image: url(/bundles/syscrunchstore/images/publisher-owl-background.gif), url(/bundles/syscrunchstore/images/publisher-background.gif);
+  background-position: 50% 40px, left top;
+  background-repeat: no-repeat, repeat;
+}
+
+/* line 330, assetic_compass5IwFcD.scss */
+.publisher .content h1 {
+  margin: 20px 0;
+}
+
+/* line 334, assetic_compass5IwFcD.scss */
+.publisher .content p {
+  margin: 0 60px 20px;
+}
+
+/* line 338, assetic_compass5IwFcD.scss */
+footer {
+  height: 70px;
+  background-image: url(/bundles/syscrunchstore/images/footer.gif);
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12.5px;
+  padding-top: 30px;
+}
+
+/* line 348, assetic_compass5IwFcD.scss */
+footer ul {
+  width: 780px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+/* line 354, assetic_compass5IwFcD.scss */
+footer ul li {
+  padding: 0 55px;
+  float: left;
+}
+
+/* line 359, assetic_compass5IwFcD.scss */
+footer ul li a {
+  color: #0099CC;
+  text-transform: uppercase;
+}
+
+/* line 364, assetic_compass5IwFcD.scss */
+footer ul li a:hover {
+  color: #00517F;
+  text-decoration: underline;
+}
+
+/* line 369, assetic_compass5IwFcD.scss */
+.ui-front {
+  z-index: 1000;
+}
+
+/* line 373, assetic_compass5IwFcD.scss */
+.innerpage #content h2 {
+  color: #444444;
+  text-align: center;
+}
+
+/* line 378, assetic_compass5IwFcD.scss */
+.innerpage #content form {
+  width: 450px;
+  color: #333333;
+  margin: 0 auto;
+}
+
+/* line 384, assetic_compass5IwFcD.scss */
+div.two-columns > div, div.two-columns > div + div {
+  float: left;
+  padding: 10px 0;
+  width: 50%;
+}
+
+/* line 389, assetic_compass5IwFcD.scss */
+div.two-columns > div#signinButton {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  clear: both;
+  margin: 0 0 10px 0;
+}
+
+/* line 396, assetic_compass5IwFcD.scss */
+div.two-columns > div + div + div {
+  float: none;
+  clear: left;
+  padding: 0 !important;
+}
+
+/* line 402, assetic_compass5IwFcD.scss */
+#content > form > div {
+  padding: 5px 0;
+}
+
+/* line 406, assetic_compass5IwFcD.scss */
+#content > form > div > label {
+  width: 200px;
+  float: left;
+  height: 28px;
+  line-height: 28px;
+}
+
+/* line 413, assetic_compass5IwFcD.scss */
+#content > form > div > input[type="text"], #content > form > div > input[type="password"], #content > form > div > input[type="email"] {
+  width: 230px;
+  border: 1px solid #AAAAAA;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+  padding: 3px 5px;
+}
+
+/* line 421, assetic_compass5IwFcD.scss */
+#content > form > div > input[type="submit"] {
+  border: 1px solid #AAAAAA;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  color: #666666;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 1em;
+}
+
+/* line 431, assetic_compass5IwFcD.scss */
+#content > form > div > input[type="submit"]:hover {
+  color: #444444;
+}
+
+/* line 435, assetic_compass5IwFcD.scss */
+#content > form > div > input[type="submit"]:active {
+  position: relative;
+  top: 1px;
+  box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* line 441, assetic_compass5IwFcD.scss */
+#content > p {
+  text-align: center;
+  color: #444444;
+}
+
+/* line 446, assetic_compass5IwFcD.scss */
+.required {
+  color: #aa3333;
+}
+
+/* line 450, assetic_compass5IwFcD.scss */
+#form_messages {
+  display: none;
+  color: #AA6666;
+  text-align: center;
+}
+
+@media screen and (max-width: 999px) {
+  /* line 457, assetic_compass5IwFcD.scss */
+  .small-stamps .position-1 {
+    left: -310px;
+    -webkit-transform: scale(0.38) rotate(-35deg);
+    -moz-transform: scale(0.38) rotate(-35deg);
+    -ms-transform: scale(0.38) rotate(-35deg);
+    -o-transform: scale(0.38) rotate(-35deg);
+    transform: scale(0.38) rotate(-35deg);
+  }
+
+  /* line 465, assetic_compass5IwFcD.scss */
+  .small-stamps .position-2 {
+    left: -220px;
+    -webkit-transform: scale(0.25) rotate(-12deg);
+    -moz-transform: scale(0.25) rotate(-12deg);
+    -ms-transform: scale(0.25) rotate(-12deg);
+    -o-transform: scale(0.25) rotate(-12deg);
+    transform: scale(0.25) rotate(-12deg);
+  }
+
+  /* line 473, assetic_compass5IwFcD.scss */
+  .small-stamps .position-3 {
+    left: -150px;
+    -webkit-transform: scale(0.25) rotate(-12deg);
+    -moz-transform: scale(0.25) rotate(-12deg);
+    -ms-transform: scale(0.25) rotate(-12deg);
+    -o-transform: scale(0.25) rotate(-12deg);
+    transform: scale(0.25) rotate(-12deg);
+  }
+
+  /* line 481, assetic_compass5IwFcD.scss */
+  .small-stamps .position-3:hover {
+    left: -220px;
+  }
+
+  /* line 484, assetic_compass5IwFcD.scss */
+  .small-stamps .position-4 {
+    left: -190px;
+    -webkit-transform: scale(0.4) rotate(30deg);
+    -moz-transform: scale(0.4) rotate(30deg);
+    -ms-transform: scale(0.4) rotate(30deg);
+    -o-transform: scale(0.4) rotate(30deg);
+    transform: scale(0.4) rotate(30deg);
+  }
+
+  /* line 492, assetic_compass5IwFcD.scss */
+  .concept {
+    font-size: 25px;
+  }
+
+  /* line 495, assetic_compass5IwFcD.scss */
+  .role-description .content {
+    width: 425px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  /* line 501, assetic_compass5IwFcD.scss */
+  .registration {
+    margin: 0 auto 105px;
+  }
+
+  /* line 504, assetic_compass5IwFcD.scss */
+  .stamps-background {
+    display: block;
+    position: absolute;
+    width: 453px;
+    height: 362px;
+    right: 0;
+    top: 390px;
+    background-image: url(/bundles/syscrunchstore/images/small-stamps.png);
+    z-index: 100;
+  }
+
+  /* line 514, assetic_compass5IwFcD.scss */
+  .small-stamps .stamps {
+    display: block;
+    position: absolute;
+    width: 30%;
+    max-width: 453px;
+    height: 325px;
+    right: 0;
+    bottom: 0;
+  }
+
+  /* line 523, assetic_compass5IwFcD.scss */
+  .small-stamps .stamp {
+    position: absolute;
+    width: 524px;
+    height: 292px;
+    background-image: url(/bundles/syscrunchstore/images/main-stamp.png);
+    background-repeat: no-repeat;
+    padding: 44px 47px 56px 44px;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    -webkit-transform: scale(0.25) rotate(30deg);
+    -moz-transform: scale(0.25) rotate(30deg);
+    -ms-transform: scale(0.25) rotate(30deg);
+    -o-transform: scale(0.25) rotate(30deg);
+    transform: scale(0.25) rotate(30deg);
+    behavior: url(http://css3pie.com/pie/PIE.htc);
+  }
+
+  /* line 542, assetic_compass5IwFcD.scss */
+  .small-stamps .stamp:hover {
+    -webkit-transform: scale(0.7) rotate(0deg);
+    -moz-transform: scale(0.7) rotate(0deg);
+    -ms-transform: scale(0.7) rotate(0deg);
+    -o-transform: scale(0.7) rotate(0deg);
+    transform: scale(0.7) rotate(0deg);
+    z-index: 1000;
+  }
+
+  /* line 550, assetic_compass5IwFcD.scss */
+  .small-stamps .stamp .content {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  /* line 556, assetic_compass5IwFcD.scss */
+  .small-stamps .stamp .content img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  /* line 560, assetic_compass5IwFcD.scss */
+  .small-stamps .position-1 {
+    top: 0px;
+    left: -250px;
+    z-index: 400;
+    -webkit-transform: scale(0.32) rotate(-25deg);
+    -moz-transform: scale(0.32) rotate(-25deg);
+    -ms-transform: scale(0.32) rotate(-25deg);
+    -o-transform: scale(0.32) rotate(-25deg);
+    transform: scale(0.32) rotate(-25deg);
+  }
+
+  /* line 570, assetic_compass5IwFcD.scss */
+  .small-stamps .position-2 {
+    top: 55px;
+    left: -180px;
+    z-index: 390;
+    -webkit-transform: scale(0.25) rotate(-12deg);
+    -moz-transform: scale(0.25) rotate(-12deg);
+    -ms-transform: scale(0.25) rotate(-12deg);
+    -o-transform: scale(0.25) rotate(-12deg);
+    transform: scale(0.25) rotate(-12deg);
+  }
+
+  /* line 580, assetic_compass5IwFcD.scss */
+  .small-stamps .position-3 {
+    top: 90px;
+    left: -60px;
+    z-index: 380;
+    -webkit-transform: scale(0.39) rotate(-12deg);
+    -moz-transform: scale(0.39) rotate(-12deg);
+    -ms-transform: scale(0.39) rotate(-12deg);
+    -o-transform: scale(0.39) rotate(-12deg);
+    transform: scale(0.39) rotate(-12deg);
+  }
+
+  /* line 590, assetic_compass5IwFcD.scss */
+  .small-stamps .position-3:hover {
+    left: -140px;
+  }
+
+  /* line 593, assetic_compass5IwFcD.scss */
+  .small-stamps .position-4 {
+    top: -50px;
+    left: -150px;
+    z-index: 370;
+    -webkit-transform: scale(0.4) rotate(30deg);
+    -moz-transform: scale(0.4) rotate(30deg);
+    -ms-transform: scale(0.4) rotate(30deg);
+    -o-transform: scale(0.4) rotate(30deg);
+    transform: scale(0.4) rotate(30deg);
+  }
+}
+@media screen and (min-width: 1250px) {
+  /* line 606, assetic_compass5IwFcD.scss */
+  .small-stamps .position-1 {
+    top: 0px;
+    left: -270px;
+    z-index: 400;
+    -webkit-transform: scale(0.38) rotate(-35deg);
+    -moz-transform: scale(0.38) rotate(-35deg);
+    -ms-transform: scale(0.38) rotate(-35deg);
+    -o-transform: scale(0.38) rotate(-35deg);
+    transform: scale(0.38) rotate(-35deg);
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* line 619, assetic_compass5IwFcD.scss */
+  .stamps-background {
+    width: 637px;
+    height: 409px;
+    right: 10%;
+    top: 390px;
+    background-image: url(/bundles/syscrunchstore/images/small-stamps-full.png);
+  }
+}
+/* line 628, assetic_compass5IwFcD.scss */
+.page-id-30 #content > h1, .page-id-32 #content > h1, .page-id-45 #content > h1 {
+  color: #333333;
+  text-align: center;
+}
+
+/* line 633, assetic_compass5IwFcD.scss */
+.page-id-30 #content > h2, .page-id-32 #content > h2, .page-id-45 #content > h2 {
+  text-align: left;
+}
+
+/* line 637, assetic_compass5IwFcD.scss */
+.page-id-30 #content > p, .page-id-32 #content > p, .page-id-45 #content > p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 1025px) and (min-width: 1020px) {
+  /* line 642, assetic_compass5IwFcD.scss */
+  .role-description .content {
+    width: 425px;
+    height: 375px;
+  }
+}
+@media screen and (max-width: 1020px) and (min-width: 768px) {
+  /* line 649, assetic_compass5IwFcD.scss */
+  .role-description .content {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+  }
+
+  /* line 655, assetic_compass5IwFcD.scss */
+  .role-description .content-separator {
+    float: none;
+    padding: 20px 0;
+  }
+
+  /* line 659, assetic_compass5IwFcD.scss */
+  .role-description .content ul {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 769px) {
+  /* line 665, assetic_compass5IwFcD.scss */
+  .role-description .content {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+  }
+
+  /* line 671, assetic_compass5IwFcD.scss */
+  .role-description .content-separator {
+    float: none;
+    padding: 20px 0;
+  }
+
+  /* line 675, assetic_compass5IwFcD.scss */
+  .role-description .content ul {
+    margin-bottom: 20px;
+  }
+}
+/* line 680, assetic_compass5IwFcD.scss */
+.email-registration {
+  background-color: white;
+  padding-top: 70px;
+  height: 600px;
+  padding-left: 70px;
+  padding-right: 70px;
+  box-shadow: 12px;
+  position: relative;
+  font-size: 18px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top: 5px solid #F2F2F2;
+  border-left: 5px solid #F2F2F2;
+  border-right: 5px solid #f2f2f2;
+}
+
+/* line 696, assetic_compass5IwFcD.scss */
+.email-send-logo {
+  background-image: url(/bundles/syscrunchstore/images/buho.png);
+  height: 119px;
+  width: 106px;
+  position: absolute;
+  left: 420px;
+  top: 18px;
+}
+
+/* line 705, assetic_compass5IwFcD.scss */
+.email-registration hr {
+  height: 1px;
+  background-color: black;
+  border: none;
+}
+
+/* line 711, assetic_compass5IwFcD.scss */
+.email-registration-footer {
+  height: 80px;
+  background-color: #E6E6E6;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 5px solid #F2F2F2;
+  border-left: 5px solid #F2F2F2;
+  border-right: 5px solid #f2f2f2;
+}
+
+/* line 721, assetic_compass5IwFcD.scss */
+.send-from {
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  background: white;
+  text-align: center;
+  left: 290px;
+  top: 390px;
+  width: 200px;
+  height: 130px;
+  padding: 100px;
+  position: absolute;
+}
+
+/* line 734, assetic_compass5IwFcD.scss */
+.send-from p {
+  padding-top: 20px;
+}
+
+/* line 738, assetic_compass5IwFcD.scss */
+.send-information {
+  height: 15px;
+  float: left;
+  position: static;
+  padding-left: 70px;
+  padding-right: 20px;
+  padding-top: 50px;
+}
+
+/* line 747, assetic_compass5IwFcD.scss */
+.send-information-images {
+  float: right;
+  padding-right: 15px;
+  padding-top: 50px;
+}
+
+/* line 753, assetic_compass5IwFcD.scss */
+.send-information-images br {
+  display: none;
+}
+
+/* line 757, assetic_compass5IwFcD.scss */
+.social-info {
+  float: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+/* beginning browse styles */
+/* line 773, assetic_compass5IwFcD.scss */
+body.browse {
+  background-color: #fcfdff;
+  background-image: url(/bundles/syscrunchstore/images/background.gif);
+  background-position: left top;
+  background-repeat: repeat-x;
+  background-size: auto;
+}
+/* line 779, assetic_compass5IwFcD.scss */
+body.browse a {
+  text-decoration: none;
+}
+/* line 782, assetic_compass5IwFcD.scss */
+body.browse .transparent {
+  opacity: 0;
+}
+/* line 785, assetic_compass5IwFcD.scss */
+body.browse #header {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 789, assetic_compass5IwFcD.scss */
+body.browse #header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 793, assetic_compass5IwFcD.scss */
+body.browse #header ul.top-list {
+  padding-top: 20px;
+  height: 40px;
+}
+/* line 796, assetic_compass5IwFcD.scss */
+body.browse #header ul.top-list li {
+  font-size: 16.67px;
+  padding: 0 20px;
+  line-height: 25px;
+  text-align: center;
+  height: 25px;
+}
+/* line 805, assetic_compass5IwFcD.scss */
+body.browse #header ul.top-list li:nth-child(-n+4) {
+  border-right: 1px solid #C2BEBF;
+}
+/* line 809, assetic_compass5IwFcD.scss */
+body.browse #header ul.top-list li:nth-child(n+2) {
+  border-left: 1px solid #fcfdff;
+}
+/* line 812, assetic_compass5IwFcD.scss */
+body.browse #header ul.top-list li a {
+  color: #809aa8;
+  text-transform: uppercase;
+}
+/* line 815, assetic_compass5IwFcD.scss */
+body.browse #header ul.top-list li a:hover {
+  color: #597482;
+}
+/* line 821, assetic_compass5IwFcD.scss */
+body.browse #header ul.bottom-list {
+  width: 650px;
+  height: 40px;
+  margin: 0 auto;
+}
+/* line 825, assetic_compass5IwFcD.scss */
+body.browse #header ul.bottom-list li {
+  font-size: 18.75px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 40px;
+  width: 130px;
+  text-align: center;
+}
+/* line 831, assetic_compass5IwFcD.scss */
+body.browse #header ul.bottom-list li a {
+  color: #747474;
+}
+/* line 833, assetic_compass5IwFcD.scss */
+body.browse #header ul.bottom-list li a:hover {
+  color: #4e4e4e;
+}
+/* line 840, assetic_compass5IwFcD.scss */
+body.browse #header ul li {
+  float: left;
+}
+/* line 844, assetic_compass5IwFcD.scss */
+body.browse #header .main-logo {
+  display: block;
+  background-image: url(/bundles/syscrunchstore/images/logo.png);
+  width: 460px;
+  height: 62px;
+  margin: 0 auto 40px;
+}
+/* line 850, assetic_compass5IwFcD.scss */
+body.browse #header .main-logo + .stalker {
+  margin-top: -40px;
+}
+/* line 852, assetic_compass5IwFcD.scss */
+body.browse #header .main-logo + .stalker.detached {
+  margin-top: 0;
+  position: fixed;
+  top: 0px;
+  left: calc(50% - 325px);
+  left: -o-calc(50% - 325px);
+  left: -moz-calc(50% - 325px);
+  left: -webkit-calc(50% - 325px);
+  z-index: 1000;
+}
+/* line 862, assetic_compass5IwFcD.scss */
+body.browse #content {
+  background: none;
+}
+/* line 864, assetic_compass5IwFcD.scss */
+body.browse #content .products-container {
+  padding: 20px;
+}
+/* line 866, assetic_compass5IwFcD.scss */
+body.browse #content .products-container .product {
+  margin: 10px 20px;
+  float: left;
+  position: relative;
+  width: calc((100% / 3) - 40px);
+  width: -o-calc((100% / 3) - 40px);
+  width: -moz-calc((100% / 3) - 40px);
+  width: -webkit-calc((100% / 3) - 40px);
+}
+/* line 871, assetic_compass5IwFcD.scss */
+body.browse #content .products-container .product .actions {
+  display: none;
+}
+/* line 874, assetic_compass5IwFcD.scss */
+body.browse #content .products-container .product .thumbnail {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+/* line 878, assetic_compass5IwFcD.scss */
+body.browse #content .products-container .product .thumbnail .aspect-fixer {
+  margin-top: 75%;
+}
+/* line 882, assetic_compass5IwFcD.scss */
+body.browse #content .products-container .product .thumbnail .image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: silver;
+}
+/* line 890, assetic_compass5IwFcD.scss */
+body.browse #content .products-container .product .thumbnail .image .imgc {
+  width: 100%;
+  height: 100%;
+}
+/* line 896, assetic_compass5IwFcD.scss */
+body.browse #content .products-container .product .buttons {
+  height: 45px;
+  background-color: #FFFFFF;
+}
+/* line 899, assetic_compass5IwFcD.scss */
+body.browse #content .products-container .product .buttons .demo {
+  position: relative;
+  top: -9px;
+  color: #FDFDFD;
+  background-color: #A5E6FC;
+  border: 1px solid #6CD3F4;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+/* line 910, assetic_compass5IwFcD.scss */
+body.browse #content .products-container .product .buttons .data {
+  display: inline-block;
+  width: calc(100% - 200px);
+  width: -o-calc(100% - 200px);
+  width: -moz-calc(100% - 200px);
+  width: -webkit-calc(100% - 200px);
+  height: 45px;
+}
+/* line 914, assetic_compass5IwFcD.scss */
+body.browse #content .products-container .product .buttons .data h1 {
+  margin: 0;
+  font-size: 18.11px;
+  color: #3FC9F5;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 924, assetic_compass5IwFcD.scss */
+body.browse #content .products-container .product .buttons .data h1:hover {
+  background-color: #FFFFFF;
+  position: relative;
+  z-index: 1000;
+  overflow: visible;
+}
+/* line 931, assetic_compass5IwFcD.scss */
+body.browse #content .products-container .product .buttons .data div {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 11px;
+  color: #393B3B;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 941, assetic_compass5IwFcD.scss */
+body.browse #content .products-container .product .buttons .favorite {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(/bundles/syscrunchstore/images/favorite.png);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+}
+/* line 950, assetic_compass5IwFcD.scss */
+body.browse #content .products-container .product .buttons .cart {
+  position: relative;
+  top: -9px;
+  display: inline-block;
+  color: #FDFDFD;
+  background-color: #A5E6FC;
+  border: 1px solid #6CD3F4;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 65px;
+  font-weight: bold;
+  background-image: url(/bundles/syscrunchstore/images/shoping.png);
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  background-size: 30%;
+}
+/* line 971, assetic_compass5IwFcD.scss */
+body.browse #content.boxed {
+  background-color: #FFFFFF;
+  border: 7px solid #F7F7F7;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+/* line 976, assetic_compass5IwFcD.scss */
+body.browse #content.boxed.medium {
+  width: 450px;
+  padding: 45px 95px;
+}
+/* line 980, assetic_compass5IwFcD.scss */
+body.browse #content.boxed.large {
+  width: 700px;
+  padding: 45px 95px;
+}
+/* line 984, assetic_compass5IwFcD.scss */
+body.browse #content.boxed h1 {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  color: #58636D;
+}
+/* line 989, assetic_compass5IwFcD.scss */
+body.browse #content.boxed .button {
+  display: inline-block;
+  border: 1px solid #D5D4D4;
+  border-radius: 5px;
+  padding: 10px;
+  color: #FFFFFF;
+}
+/* line 995, assetic_compass5IwFcD.scss */
+body.browse #content.boxed .button.blue-button {
+  background-color: #3B5897;
+}
+/* line 998, assetic_compass5IwFcD.scss */
+body.browse #content.boxed .button.cyan-button {
+  background-color: #2FC5F2;
+}
+/* line 1003, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* line 1009, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form fieldset > div,
+body.browse #content.boxed form > div {
+  padding-left: 35px;
+}
+/* line 1013, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form fieldset > div.form-field label,
+body.browse #content.boxed form > div.form-field label {
+  width: 90px;
+  background-color: #F5F5F5;
+  text-align: center;
+  color: #939393;
+  border: 1px solid #C8CACB;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  float: left;
+  height: 28px;
+  line-height: 28px;
+}
+/* line 1025, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form fieldset > div.form-field input,
+body.browse #content.boxed form > div.form-field input {
+  box-shadow: none;
+  height: 26px;
+  width: 285px;
+  padding: 1px;
+  background-color: #FFFFFF;
+  border: 1px solid #C8CACB;
+  border-left: none;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 1037, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form fieldset > div.form-field textarea,
+body.browse #content.boxed form > div.form-field textarea {
+  box-shadow: none;
+  height: 100px;
+  width: 285px;
+  padding: 1px;
+  margin: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #C8CACB;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 1049, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form fieldset > div.form-field select,
+body.browse #content.boxed form > div.form-field select {
+  height: 30px;
+  width: 285px;
+  padding: 1px;
+  background-color: #FFFFFF;
+  border: 1px solid #C8CACB;
+  border-left: none;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 1062, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form fieldset > div.checkbox-field ul,
+body.browse #content.boxed form > div.checkbox-field ul {
+  list-style: none;
+}
+/* line 1068, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form fieldset > div.datetime-field *[data-editor] select,
+body.browse #content.boxed form > div.datetime-field *[data-editor] select {
+  width: 50px;
+}
+/* line 1073, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form fieldset > div label,
+body.browse #content.boxed form > div label {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16.67px;
+  color: #58636D;
+}
+/* line 1079, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form fieldset > div.two-columns > div:nth-child(2),
+body.browse #content.boxed form > div.two-columns > div:nth-child(2) {
+  text-align: right;
+}
+/* line 1081, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form fieldset > div.two-columns > div:nth-child(2) a,
+body.browse #content.boxed form > div.two-columns > div:nth-child(2) a {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16.67px;
+  color: #58636D;
+  margin-right: 35px;
+}
+/* line 1089, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form fieldset > div input[type="submit"],
+body.browse #content.boxed form > div input[type="submit"] {
+  padding: 5px 10px;
+  color: #FFFFFF;
+  background-color: #0DB9E0;
+  border: 1px solid #86DCEF;
+  box-shadow: 0 0 0 1px #0981CD;
+}
+/* line 1097, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form > div#uploadercontainer {
+  height: 100px;
+  background-color: #777;
+  position: relative;
+  text-align: center;
+  padding: 0px;
+}
+/* line 1104, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form > div.media_notes {
+  padding: 0px;
+}
+/* line 1109, assetic_compass5IwFcD.scss */
+body.browse #content.boxed .third_container {
+  display: none;
+}
+/* line 1112, assetic_compass5IwFcD.scss */
+body.browse #content.boxed .third_container div p {
+  text-align: justify;
+}
+/* line 1117, assetic_compass5IwFcD.scss */
+body.browse #content.boxed .third_container #thirdAuthForm div {
+  position: relative;
+  height: 40px;
+  width: 140px;
+}
+/* line 1121, assetic_compass5IwFcD.scss */
+body.browse #content.boxed .third_container #thirdAuthForm div div.loader {
+  display: none;
+  height: 30px;
+  width: 100%;
+  background-image: url(/bundles/syscrunchstore/images/ajax-loader.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 1130, assetic_compass5IwFcD.scss */
+body.browse #content.boxed .third_container #thirdAuthForm .form-field > input.selector {
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  margin: 4px;
+}
+/* line 1147, assetic_compass5IwFcD.scss */
+body.browse #content.login h1 {
+  padding: 0 35px;
+}
+/* line 1150, assetic_compass5IwFcD.scss */
+body.browse #content.login h1 + div > div:first-child > a {
+  margin-left: 35px;
+}
+/* line 1153, assetic_compass5IwFcD.scss */
+body.browse #content.login h1 + div > div:nth-child(2) {
+  text-align: right;
+}
+/* line 1155, assetic_compass5IwFcD.scss */
+body.browse #content.login h1 + div > div:nth-child(2) > a {
+  margin-right: 35px;
+}
+/* line 1165, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form div.stalker-bar {
+  background-color: #b4b4b4;
+  background-color: rgba(180, 180, 180, 0.6);
+  position: relative;
+  height: 40px;
+  width: 700px;
+  padding: 0;
+}
+/* line 1175, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form div.stalker-bar .bar-content {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+/* line 1180, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form div.stalker-bar + .stalker-shadow {
+  padding: 0;
+}
+/* line 1183, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form div.stalker-bar.stalking {
+  position: fixed;
+  top: 0;
+  z-index: 45;
+}
+/* line 1187, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form div.stalker-bar.stalking + .stalker-shadow {
+  height: 40px;
+  width: 700px;
+}
+/* line 1193, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form h2 {
+  text-align: right;
+}
+/* line 1197, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form div .field {
+  float: left;
+  width: calc((100% / 3) - 10px);
+  width: -o-calc((100% / 3) - 10px);
+  width: -moz-calc((100% / 3) - 10px);
+  width: -webkit-calc((100% / 3) - 10px);
+  padding: 5px;
+  height: 40px;
+}
+/* line 1202, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form div .field .required {
+  float: left;
+  width: 10px;
+}
+/* line 1205, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form div .field .required + select {
+  width: calc(100% - 10px);
+  width: -o-calc(100% - 10px);
+  width: -moz-calc(100% - 10px);
+  width: -webkit-calc(100% - 10px);
+}
+/* line 1209, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form div .field .required + input[type="text"],
+body.browse #content.add-page form div .field .required + input[type="url"] {
+  width: calc(100% - 14px);
+  width: -o-calc(100% - 14px);
+  width: -moz-calc(100% - 14px);
+  width: -webkit-calc(100% - 14px);
+}
+/* line 1216, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form div .field select,
+body.browse #content.add-page form div .field input[type="text"],
+body.browse #content.add-page form div .field input[type="url"] {
+  margin: 0;
+  width: 100%;
+}
+/* line 1221, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form div .big-field {
+  float: left;
+  width: calc(100% - 10px);
+  width: -o-calc(100% - 10px);
+  width: -moz-calc(100% - 10px);
+  width: -webkit-calc(100% - 10px);
+  padding: 5px;
+}
+/* line 1225, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form div .big-field textarea {
+  margin: 0;
+  width: 100%;
+}
+/* line 1232, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form fieldset > div.form-field {
+  padding: 5px 30px;
+}
+/* line 1234, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form fieldset > div.form-field > label {
+  width: 190px;
+}
+/* line 1240, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form fieldset > div.form-field *[data-editor] input[type="text"],
+body.browse #content.add-page form fieldset > div.form-field *[data-editor] input[type="url"],
+body.browse #content.add-page form fieldset > div.form-field *[data-editor] input[type="number"] {
+  width: 410px;
+}
+/* line 1243, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form fieldset > div.form-field *[data-editor] textarea {
+  width: 409px;
+}
+/* line 1246, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form fieldset > div.form-field *[data-editor] select {
+  width: 413px;
+}
+/* line 1252, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form fieldset > div.form-field.datetime-field *[data-editor] *[data-date] {
+  float: left;
+}
+/* line 1255, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form fieldset > div.form-field.datetime-field *[data-editor] *[data-date] select:first-child {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+/* line 1261, assetic_compass5IwFcD.scss */
+body.browse #content.add-page form fieldset > div.form-field.datetime-field *[data-editor] select {
+  margin: 0;
+  width: auto;
+}
+/* line 1272, assetic_compass5IwFcD.scss */
+body.browse #footer {
+  margin-top: 30px;
+}
+/* line 1275, assetic_compass5IwFcD.scss */
+body.browse > .message {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid #F7F7F7;
+  padding: 10px;
+  float: left;
+  display: table;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+}
+/* line 1287, assetic_compass5IwFcD.scss */
+body.browse > .message .icon {
+  float: left;
+  height: 48px;
+  width: 48px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+/* line 1293, assetic_compass5IwFcD.scss */
+body.browse > .message .icon.info {
+  background-image: url(/bundles/syscrunchstore/images/info.png);
+}
+/* line 1296, assetic_compass5IwFcD.scss */
+body.browse > .message .icon.error {
+  background-image: url(/bundles/syscrunchstore/images/error.png);
+}
+/* line 1300, assetic_compass5IwFcD.scss */
+body.browse > .message .text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 1307, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form fieldset > div, body.browse #content.boxed form > div.gallery-container {
+  height: 200px;
+  background-color: #999;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 0;
+  overflow: auto;
+  width: 100%;
+}
+/* line 1316, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form fieldset > div div, body.browse #content.boxed form > div.gallery-container div {
+  width: 150px;
+  float: left;
+  height: 120px;
+}
+/* line 1320, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form fieldset > div div img, body.browse #content.boxed form > div.gallery-container div img {
+  max-width: 140px;
+  max-height: 95px;
+}
+/* line 1324, assetic_compass5IwFcD.scss */
+body.browse #content.boxed form fieldset > div div span, body.browse #content.boxed form > div.gallery-container div span {
+  font-size: 50%;
+  overflow: hidden;
+}
+
+/* line 1330, assetic_compass5IwFcD.scss */
+.uploader_container {
+  top: 40%;
+  position: relative;
+  width: 77%;
+  height: 50%;
+  margin: 0 auto;
+  z-index: 10;
+}
+/* line 1338, assetic_compass5IwFcD.scss */
+.uploader_container .file_input_button {
+  float: left;
+  height: 22px;
+  position: relative;
+  text-align: left;
+  width: 50%;
+}
+/* line 1344, assetic_compass5IwFcD.scss */
+.uploader_container .file_input_button span.basic_listener {
+  position: absolute;
+  z-index: 40;
+  width: 110px;
+  text-align: left;
+}
+/* line 1349, assetic_compass5IwFcD.scss */
+.uploader_container .file_input_button span.basic_listener input {
+  position: absolute;
+  z-index: -1;
+  width: 147px;
+}
+/* line 1357, assetic_compass5IwFcD.scss */
+.uploader_container .file_external_input_button {
+  float: left;
+  position: relative;
+  text-align: right;
+  width: 50%;
+}
+/* line 1363, assetic_compass5IwFcD.scss */
+.uploader_container .file_external_input_button span {
+  text-align: right;
+}
+
+/* line 1369, assetic_compass5IwFcD.scss */
+.media_notes p {
+  font-size: 11px;
+}
+
+/* line 1373, assetic_compass5IwFcD.scss */
+.message_back {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  font-size: 18px;
+  margin-left: -30px;
+  z-index: 0;
+}
+/* line 1380, assetic_compass5IwFcD.scss */
+.message_back i {
+  position: relative;
+  top: 5px;
+  color: #FFA500;
+}
+/* line 1385, assetic_compass5IwFcD.scss */
+.message_back span {
+  font-size: 15px;
+}
+
+/* line 1389, assetic_compass5IwFcD.scss */
+#fileupload {
+  visibility: hidden;
+}

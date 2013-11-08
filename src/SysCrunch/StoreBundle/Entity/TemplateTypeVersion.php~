@@ -1,0 +1,137 @@
+<?php
+
+namespace SysCrunch\StoreBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use FSC\HateoasBundle\Annotation as Rest;
+
+/**
+ * Class TemplateTypeVersion
+ * @package SysCrunch\StoreBundle\Entity
+ * @Rest\Relation("self", href = @Rest\Route("api_template_type_version_get", parameters = { "id" = ".id" }))
+ * @ORM\Table(name="template_type_version")
+ * @ORM\Entity(repositoryClass="SysCrunch\StoreBundle\Entity\Repository\TemplateTypeVersionRepository")
+ */
+class TemplateTypeVersion
+{
+  /**
+   * @ORM\Column(type="string", length=250)
+   */
+  private $version;
+  /**
+   * @ORM\Column(type="integer")
+   * @ORM\Id
+   * @ORM\GeneratedValue
+   */
+  private $id;
+  /**
+   * @ORM\ManyToOne(targetEntity="TemplateType")
+   * @ORM\JoinColumn(name="template_type_id", referencedColumnName="id")
+   */
+  private $templateType;
+  /**
+   * @ORM\ManyToMany(targetEntity="Template")
+   * @ORM\JoinTable(name="template_template_type_version",
+   *      joinColumns={@ORM\JoinColumn(name="template_id", referencedColumnName="id")},
+   *      inverseJoinColumns={@ORM\JoinColumn(name="template_type_version_id", referencedColumnName="id")}
+   *      )
+   */
+  private $templates;
+
+  /**
+   * Constructor
+   */
+  public function __construct()
+  {
+    $this->template = new \Doctrine\Common\Collections\ArrayCollection();
+  }
+
+  /**
+   * Get version
+   *
+   * @return string
+   */
+  public function getVersion()
+  {
+    return $this->version;
+  }
+
+  /**
+   * Set version
+   *
+   * @param string $version
+   * @return TemplateTypeVersion
+   */
+  public function setVersion($version)
+  {
+    $this->version = $version;
+
+    return $this;
+  }
+
+  /**
+   * Get id
+   *
+   * @return integer
+   */
+  public function getId()
+  {
+    return $this->id;
+  }
+
+  /**
+   * Get templateType
+   *
+   * @return \SysCrunch\StoreBundle\Entity\TemplateType
+   */
+  public function getTemplateType()
+  {
+    return $this->templateType;
+  }
+
+  /**
+   * Set templateType
+   *
+   * @param \SysCrunch\StoreBundle\Entity\TemplateType $templateType
+   * @return TemplateTypeVersion
+   */
+  public function setTemplateType(\SysCrunch\StoreBundle\Entity\TemplateType $templateType = null)
+  {
+    $this->templateType = $templateType;
+
+    return $this;
+  }
+
+  /**
+   * Add template
+   *
+   * @param \SysCrunch\StoreBundle\Entity\Template $template
+   * @return TemplateTypeVersion
+   */
+  public function addTemplate(\SysCrunch\StoreBundle\Entity\Template $template)
+  {
+    $this->template[] = $template;
+
+    return $this;
+  }
+
+  /**
+   * Remove template
+   *
+   * @param \SysCrunch\StoreBundle\Entity\Template $template
+   */
+  public function removeTemplate(\SysCrunch\StoreBundle\Entity\Template $template)
+  {
+    $this->template->removeElement($template);
+  }
+
+  /**
+   * Get template
+   *
+   * @return \Doctrine\Common\Collections\Collection
+   */
+  public function getTemplate()
+  {
+    return $this->template;
+  }
+}

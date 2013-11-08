@@ -1,0 +1,34 @@
+security:
+    encoders:
+        FOS\UserBundle\Model\UserInterface: sha512
+
+    providers:
+        fos_userbundle:
+            id: fos_user.user_manager
+
+    firewalls:
+        dev:
+            pattern:  ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+            
+        wsse_secured:
+            pattern:   ^/apis/.*
+            stateless:    true
+            wsse:
+                nonce_dir: null
+                lifetime: 6000
+                provider: fos_userbundle
+            anonymous:    false
+
+    access_control:
+        - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/security, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/, role: ROLE_USER }
+        
+    role_hierarchy:
+        ROLE_PUBLISHER:      ROLE_USER
+        ROLE_BUYER:          ROLE_USER
+        ROLE_DEVELOPER:      [ROLE_PUBLISHER, ROLE_BUYER, ROLE_ALLOWED_TO_SWITCH]
+        ROLE_ADMIN:          [ROLE_PUBLISHER, ROLE_BUYER, ROLE_ALLOWED_TO_SWITCH]

@@ -1,0 +1,3888 @@
+/* Welcome to Compass.
+* In this file you should write your main styles. (or centralize your imports)
+* Import this file using the following HTML or equivalent:
+* <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*
+Mixins are fomething like functions for sass
+*/
+/**
+ * short to define calc
+ */
+/** Simple modifications needed for DropDownCheckList to take advantage of ThemeRoller settings */
+/* line 3, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist .ui-widget-content
+, .ui-dropdownchecklist .ui-widget-header {
+  border: none;
+}
+
+/* line 6, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-indent {
+  padding-left: 7px;
+}
+
+/* Font size of 0 on the -selector and an explicit medium on -text required to eliminate
+   descender problems within the containers and still have a valid size for the text */
+/* line 12, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-selector-wrapper
+, .ui-widget.ui-dropdownchecklist-selector-wrapper {
+  vertical-align: middle;
+  font-size: 0px;
+}
+
+/* line 16, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-selector {
+  padding: 1px 2px 2px 2px;
+  font-size: 0px;
+}
+
+/* line 20, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-text {
+  font-size: medium;
+}
+
+/* line 24, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-item
+, .ui-dropdownchecklist-item input {
+  vertical-align: middle;
+}
+
+/* line 27, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-group {
+  padding: 1px 2px 2px 2px;
+}
+
+/* line 9, assetic_compass1t0bKW.scss */
+html {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 14, assetic_compass1t0bKW.scss */
+body {
+  font-family: Corbel, Arial, Helvetica, "Nimbus Sans L", "Liberation Sans", sans-serif;
+  background-image: url(/bundles/syscrunchstore/images/background.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 690px;
+  background-attachment: scroll;
+  background-color: #7CD0FC;
+  margin: 0;
+}
+
+/* line 25, assetic_compass1t0bKW.scss */
+body.innerpage {
+  padding: 0;
+  margin: 0;
+  background: #A1DCFE;
+  background: -moz-linear-gradient(top, #a1dcfe 0%, white 30%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a1dcfe), color-stop(30%, white));
+  background: -webkit-linear-gradient(top, #a1dcfe 0%, white 30%);
+  background: -o-linear-gradient(top, #a1dcfe 0%, white 30%);
+  background: -ms-linear-gradient(top, #a1dcfe 0%, white 30%);
+  background: linear-gradient(to bottom, #a1dcfe 0%, #ffffff 30%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a1dcfe', endColorstr='#ffffff', GradientType=0);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: 100% 600px;
+  background-color: #FFFFFF;
+}
+/* line 40, assetic_compass1t0bKW.scss */
+body.innerpage #home_header .line {
+  margin: 20px auto 0px;
+}
+/* line 43, assetic_compass1t0bKW.scss */
+body.innerpage #content {
+  background: none;
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 50, assetic_compass1t0bKW.scss */
+a {
+  text-decoration: none;
+  color: #82D3FF;
+}
+/* line 53, assetic_compass1t0bKW.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 58, assetic_compass1t0bKW.scss */
+.clear {
+  clear: both;
+}
+
+/* line 62, assetic_compass1t0bKW.scss */
+.hidden, .preloader {
+  display: none;
+}
+
+/* line 66, assetic_compass1t0bKW.scss */
+.visible-hidden {
+  position: absolute;
+  top: -5000px;
+}
+
+/* line 71, assetic_compass1t0bKW.scss */
+#home_header {
+  position: relative;
+  min-height: 100%;
+}
+/* line 74, assetic_compass1t0bKW.scss */
+#home_header .line {
+  display: block;
+  width: 697px;
+  height: 1px;
+  margin: 70px auto 0px;
+  border-bottom: 1px solid #444444;
+  box-shadow: 0px 1px 1px white;
+}
+/* line 82, assetic_compass1t0bKW.scss */
+#home_header h1 {
+  width: 670px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Corbel, Arial, Helvetica, "Nimbus Sans L", "Liberation Sans", sans-serif;
+  font-size: 62.5px;
+  color: #444444;
+  line-height: 60px;
+  letter-spacing: 11px;
+  cursor: pointer;
+  text-shadow: -1px -1px 0 #EEEEEE, 1px -1px 0 #FFFFFF, -1px 1px 0 #EEEEEE, 1px 1px 0 #FFFFFF;
+}
+/* line 94, assetic_compass1t0bKW.scss */
+#home_header h1 + .line {
+  margin-top: 0px;
+}
+/* line 98, assetic_compass1t0bKW.scss */
+#home_header h2 {
+  width: 624px;
+  margin: 5px auto 1em;
+  text-align: center;
+  font-family: Corbel, Arial, Helvetica, "Nimbus Sans L", "Liberation Sans", sans-serif;
+  font-size: 22.92px;
+  color: #333333;
+}
+/* line 105, assetic_compass1t0bKW.scss */
+#home_header h2 strong {
+  color: #044068;
+}
+/* line 109, assetic_compass1t0bKW.scss */
+#home_header .main-stamp {
+  margin: 42px auto 0px;
+  width: 524px;
+  height: 292px;
+  position: relative;
+  background-image: url(/bundles/syscrunchstore/images/main-stamp.png);
+  background-repeat: no-repeat;
+  padding: 44px 47px 56px 44px;
+  z-index: 200;
+}
+/* line 118, assetic_compass1t0bKW.scss */
+#home_header .main-stamp .logo-wordpress {
+  position: absolute;
+  top: -55px;
+  left: 50%;
+  margin-left: -125px;
+  background-image: url(/bundles/syscrunchstore/images/logo-wordpress.png);
+  width: 115px;
+  height: 115px;
+  z-index: 700;
+}
+/* line 128, assetic_compass1t0bKW.scss */
+#home_header .main-stamp .logo-html5 {
+  position: absolute;
+  top: -68px;
+  left: 50%;
+  margin-left: 70px;
+  background-image: url(/bundles/syscrunchstore/images/logo-html5.png);
+  width: 118px;
+  height: 128px;
+  z-index: 700;
+}
+/* line 138, assetic_compass1t0bKW.scss */
+#home_header .main-stamp .main-stamp-content {
+  position: relative;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+}
+/* line 143, assetic_compass1t0bKW.scss */
+#home_header .main-stamp .main-stamp-content .stamp-content {
+  position: absolute;
+  top: 36px;
+  left: 16px;
+  background-color: #99CCFF;
+  width: 238px;
+  height: 196px;
+}
+/* line 150, assetic_compass1t0bKW.scss */
+#home_header .main-stamp .main-stamp-content .stamp-content + .stamp-content {
+  left: auto;
+  right: 14px;
+}
+/* line 154, assetic_compass1t0bKW.scss */
+#home_header .main-stamp .main-stamp-content .stamp-content h2 {
+  width: auto;
+  line-height: 37px;
+  margin: 0;
+  font-weight: bold;
+}
+/* line 160, assetic_compass1t0bKW.scss */
+#home_header .main-stamp .main-stamp-content .stamp-content a {
+  display: block;
+  text-align: center;
+}
+
+/* line 169, assetic_compass1t0bKW.scss */
+.stamps-background, .small-stamps .stamps {
+  display: none;
+}
+
+/* line 173, assetic_compass1t0bKW.scss */
+.registration {
+  white-space: nowrap;
+  width: 360px;
+  height: 105px;
+  margin: 0 auto 20px;
+  padding: 10px 0;
+  background-image: url(/bundles/syscrunchstore/images/registration-text.png);
+  background-repeat: no-repeat;
+  background-position: 45px 0px;
+  text-align: center;
+  position: relative;
+  z-index: 200;
+}
+
+/* line 187, assetic_compass1t0bKW.scss */
+.registration .facebook-register {
+  display: inline-block;
+  background-image: url(/bundles/syscrunchstore/images/facebook.png);
+  width: 53px;
+  height: 54px;
+}
+
+/* line 194, assetic_compass1t0bKW.scss */
+.registration .twitter-register {
+  display: inline-block;
+  background-image: url(/bundles/syscrunchstore/images/twitter.png);
+  width: 56px;
+  height: 55px;
+}
+
+/* line 201, assetic_compass1t0bKW.scss */
+.registration .email-register {
+  display: inline-block;
+  background-image: url(/bundles/syscrunchstore/images/email.png);
+  width: 55px;
+  height: 55px;
+}
+
+/* line 208, assetic_compass1t0bKW.scss */
+#home_header .registration h1 {
+  height: 25px;
+}
+
+/* line 212, assetic_compass1t0bKW.scss */
+#home_header .registration h2 {
+  font-size: 18.75px;
+  width: auto;
+}
+
+/* line 217, assetic_compass1t0bKW.scss */
+.content-divider {
+  height: 4px;
+  background-image: url(/bundles/syscrunchstore/images/content-divider.png);
+}
+
+/* line 222, assetic_compass1t0bKW.scss */
+.concept {
+  height: 134px;
+  padding: 32px 20% 0;
+  position: relative;
+  z-index: 200;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Corbel, Arial, Helvetica, "Nimbus Sans L", "Liberation Sans", sans-serif;
+  font-size: 29.17px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.45);
+  text-align: center;
+  background-image: url(/bundles/syscrunchstore/images/concept.jpg);
+  background-size: 100% 166px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* line 240, assetic_compass1t0bKW.scss */
+#content {
+  background-color: white;
+}
+
+/* line 244, assetic_compass1t0bKW.scss */
+.buyer {
+  padding-top: 370px;
+  padding-bottom: 35px;
+  background-image: url(/bundles/syscrunchstore/images/buyer-background.png);
+  background-position: 50% 25px;
+  background-repeat: no-repeat;
+}
+
+/* line 252, assetic_compass1t0bKW.scss */
+.role-description {
+  text-align: center;
+}
+
+/* line 256, assetic_compass1t0bKW.scss */
+.role-description .content-container {
+  width: 990px;
+  margin: 0 auto;
+}
+
+/* line 261, assetic_compass1t0bKW.scss */
+.role-description .content-separator {
+  font-size: 50px;
+  font-weight: bold;
+  color: #99CCFF;
+  text-transform: uppercase;
+  padding: 115px 25px 0;
+  float: left;
+}
+
+/* line 270, assetic_compass1t0bKW.scss */
+.role-description .content {
+  font-family: "Corbel Regular", Corbel, Arial, Helvetica, sans-serif;
+  float: left;
+  width: 430px;
+  height: 330px;
+  background-image: url(/bundles/syscrunchstore/images/buyer-publisher-box.gif);
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* line 281, assetic_compass1t0bKW.scss */
+.role-description .content h1 {
+  font-size: 37.5px;
+  color: #FFFFFF;
+  margin: 30px 0;
+}
+
+/* line 287, assetic_compass1t0bKW.scss */
+.role-description .content p {
+  margin: 0 60px 40px;
+  text-align: left;
+  font-size: 18.75px;
+  color: #003366;
+}
+
+/* line 294, assetic_compass1t0bKW.scss */
+.role-description .content ul {
+  list-style: none;
+  padding: 0 70px;
+  margin: -20px 0 0;
+}
+
+/* line 300, assetic_compass1t0bKW.scss */
+.role-description .content ul li {
+  text-align: left;
+  color: #003366;
+  font-size: 18.75px;
+  padding: 0 20px 0 20px;
+  text-indent: -1.5em;
+}
+
+/* line 308, assetic_compass1t0bKW.scss */
+.role-description .content ul li:before {
+  display: inline-block;
+  width: 1em;
+  text-align: center;
+  font-size: 1.5em;
+  content: "\2022";
+  color: white;
+}
+
+/* line 317, assetic_compass1t0bKW.scss */
+.content-divider-2 {
+  background-image: url(/bundles/syscrunchstore/images/content-divider-2.png);
+  height: 9px;
+}
+
+/* line 322, assetic_compass1t0bKW.scss */
+.publisher {
+  padding-top: 335px;
+  padding-bottom: 40px;
+  background-image: url(/bundles/syscrunchstore/images/publisher-owl-background.gif), url(/bundles/syscrunchstore/images/publisher-background.gif);
+  background-position: 50% 40px, left top;
+  background-repeat: no-repeat, repeat;
+}
+
+/* line 330, assetic_compass1t0bKW.scss */
+.publisher .content h1 {
+  margin: 20px 0;
+}
+
+/* line 334, assetic_compass1t0bKW.scss */
+.publisher .content p {
+  margin: 0 60px 20px;
+}
+
+/* line 338, assetic_compass1t0bKW.scss */
+footer {
+  height: 70px;
+  background-image: url(/bundles/syscrunchstore/images/footer.gif);
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12.5px;
+  padding-top: 30px;
+}
+
+/* line 348, assetic_compass1t0bKW.scss */
+footer ul {
+  width: 780px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+/* line 354, assetic_compass1t0bKW.scss */
+footer ul li {
+  padding: 0 55px;
+  float: left;
+}
+
+/* line 359, assetic_compass1t0bKW.scss */
+footer ul li a {
+  color: #0099CC;
+  text-transform: uppercase;
+}
+
+/* line 364, assetic_compass1t0bKW.scss */
+footer ul li a:hover {
+  color: #00517F;
+  text-decoration: underline;
+}
+
+/* line 369, assetic_compass1t0bKW.scss */
+.ui-front {
+  z-index: 1000;
+}
+
+/* line 373, assetic_compass1t0bKW.scss */
+.innerpage #content h2 {
+  color: #444444;
+  text-align: center;
+}
+
+/* line 378, assetic_compass1t0bKW.scss */
+.innerpage #content form {
+  width: 450px;
+  color: #333333;
+  margin: 0 auto;
+}
+
+/* line 384, assetic_compass1t0bKW.scss */
+div.two-columns > div, div.two-columns > div + div {
+  float: left;
+  padding: 10px 0;
+  width: 50%;
+}
+
+/* line 389, assetic_compass1t0bKW.scss */
+div.two-columns > div#signinButton {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  clear: both;
+  margin: 0 0 10px 0;
+}
+
+/* line 396, assetic_compass1t0bKW.scss */
+div.two-columns > div + div + div {
+  float: none;
+  clear: left;
+  padding: 0 !important;
+}
+
+/* line 402, assetic_compass1t0bKW.scss */
+#content > form > div {
+  padding: 5px 0;
+}
+
+/* line 406, assetic_compass1t0bKW.scss */
+#content > form > div > label {
+  width: 200px;
+  float: left;
+  height: 28px;
+  line-height: 28px;
+}
+
+/* line 413, assetic_compass1t0bKW.scss */
+#content > form > div > input[type="text"], #content > form > div > input[type="password"], #content > form > div > input[type="email"] {
+  width: 230px;
+  border: 1px solid #AAAAAA;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+  padding: 3px 5px;
+}
+
+/* line 421, assetic_compass1t0bKW.scss */
+#content > form > div > input[type="submit"] {
+  border: 1px solid #AAAAAA;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  color: #666666;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 1em;
+}
+
+/* line 431, assetic_compass1t0bKW.scss */
+#content > form > div > input[type="submit"]:hover {
+  color: #444444;
+}
+
+/* line 435, assetic_compass1t0bKW.scss */
+#content > form > div > input[type="submit"]:active {
+  position: relative;
+  top: 1px;
+  box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* line 441, assetic_compass1t0bKW.scss */
+#content > p {
+  text-align: center;
+  color: #444444;
+}
+
+/* line 446, assetic_compass1t0bKW.scss */
+.required {
+  color: #aa3333;
+}
+
+/* line 450, assetic_compass1t0bKW.scss */
+#form_messages {
+  display: none;
+  color: #AA6666;
+  text-align: center;
+}
+
+@media screen and (max-width: 999px) {
+  /* line 457, assetic_compass1t0bKW.scss */
+  .small-stamps .position-1 {
+    left: -310px;
+    -webkit-transform: scale(0.38) rotate(-35deg);
+    -moz-transform: scale(0.38) rotate(-35deg);
+    -ms-transform: scale(0.38) rotate(-35deg);
+    -o-transform: scale(0.38) rotate(-35deg);
+    transform: scale(0.38) rotate(-35deg);
+  }
+
+  /* line 465, assetic_compass1t0bKW.scss */
+  .small-stamps .position-2 {
+    left: -220px;
+    -webkit-transform: scale(0.25) rotate(-12deg);
+    -moz-transform: scale(0.25) rotate(-12deg);
+    -ms-transform: scale(0.25) rotate(-12deg);
+    -o-transform: scale(0.25) rotate(-12deg);
+    transform: scale(0.25) rotate(-12deg);
+  }
+
+  /* line 473, assetic_compass1t0bKW.scss */
+  .small-stamps .position-3 {
+    left: -150px;
+    -webkit-transform: scale(0.25) rotate(-12deg);
+    -moz-transform: scale(0.25) rotate(-12deg);
+    -ms-transform: scale(0.25) rotate(-12deg);
+    -o-transform: scale(0.25) rotate(-12deg);
+    transform: scale(0.25) rotate(-12deg);
+  }
+
+  /* line 481, assetic_compass1t0bKW.scss */
+  .small-stamps .position-3:hover {
+    left: -220px;
+  }
+
+  /* line 484, assetic_compass1t0bKW.scss */
+  .small-stamps .position-4 {
+    left: -190px;
+    -webkit-transform: scale(0.4) rotate(30deg);
+    -moz-transform: scale(0.4) rotate(30deg);
+    -ms-transform: scale(0.4) rotate(30deg);
+    -o-transform: scale(0.4) rotate(30deg);
+    transform: scale(0.4) rotate(30deg);
+  }
+
+  /* line 492, assetic_compass1t0bKW.scss */
+  .concept {
+    font-size: 25px;
+  }
+
+  /* line 495, assetic_compass1t0bKW.scss */
+  .role-description .content {
+    width: 425px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  /* line 501, assetic_compass1t0bKW.scss */
+  .registration {
+    margin: 0 auto 105px;
+  }
+
+  /* line 504, assetic_compass1t0bKW.scss */
+  .stamps-background {
+    display: block;
+    position: absolute;
+    width: 453px;
+    height: 362px;
+    right: 0;
+    top: 390px;
+    background-image: url(/bundles/syscrunchstore/images/small-stamps.png);
+    z-index: 100;
+  }
+
+  /* line 514, assetic_compass1t0bKW.scss */
+  .small-stamps .stamps {
+    display: block;
+    position: absolute;
+    width: 30%;
+    max-width: 453px;
+    height: 325px;
+    right: 0;
+    bottom: 0;
+  }
+
+  /* line 523, assetic_compass1t0bKW.scss */
+  .small-stamps .stamp {
+    position: absolute;
+    width: 524px;
+    height: 292px;
+    background-image: url(/bundles/syscrunchstore/images/main-stamp.png);
+    background-repeat: no-repeat;
+    padding: 44px 47px 56px 44px;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    -webkit-transform: scale(0.25) rotate(30deg);
+    -moz-transform: scale(0.25) rotate(30deg);
+    -ms-transform: scale(0.25) rotate(30deg);
+    -o-transform: scale(0.25) rotate(30deg);
+    transform: scale(0.25) rotate(30deg);
+    behavior: url(http://css3pie.com/pie/PIE.htc);
+  }
+
+  /* line 542, assetic_compass1t0bKW.scss */
+  .small-stamps .stamp:hover {
+    -webkit-transform: scale(0.7) rotate(0deg);
+    -moz-transform: scale(0.7) rotate(0deg);
+    -ms-transform: scale(0.7) rotate(0deg);
+    -o-transform: scale(0.7) rotate(0deg);
+    transform: scale(0.7) rotate(0deg);
+    z-index: 1000;
+  }
+
+  /* line 550, assetic_compass1t0bKW.scss */
+  .small-stamps .stamp .content {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  /* line 556, assetic_compass1t0bKW.scss */
+  .small-stamps .stamp .content img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  /* line 560, assetic_compass1t0bKW.scss */
+  .small-stamps .position-1 {
+    top: 0px;
+    left: -250px;
+    z-index: 400;
+    -webkit-transform: scale(0.32) rotate(-25deg);
+    -moz-transform: scale(0.32) rotate(-25deg);
+    -ms-transform: scale(0.32) rotate(-25deg);
+    -o-transform: scale(0.32) rotate(-25deg);
+    transform: scale(0.32) rotate(-25deg);
+  }
+
+  /* line 570, assetic_compass1t0bKW.scss */
+  .small-stamps .position-2 {
+    top: 55px;
+    left: -180px;
+    z-index: 390;
+    -webkit-transform: scale(0.25) rotate(-12deg);
+    -moz-transform: scale(0.25) rotate(-12deg);
+    -ms-transform: scale(0.25) rotate(-12deg);
+    -o-transform: scale(0.25) rotate(-12deg);
+    transform: scale(0.25) rotate(-12deg);
+  }
+
+  /* line 580, assetic_compass1t0bKW.scss */
+  .small-stamps .position-3 {
+    top: 90px;
+    left: -60px;
+    z-index: 380;
+    -webkit-transform: scale(0.39) rotate(-12deg);
+    -moz-transform: scale(0.39) rotate(-12deg);
+    -ms-transform: scale(0.39) rotate(-12deg);
+    -o-transform: scale(0.39) rotate(-12deg);
+    transform: scale(0.39) rotate(-12deg);
+  }
+
+  /* line 590, assetic_compass1t0bKW.scss */
+  .small-stamps .position-3:hover {
+    left: -140px;
+  }
+
+  /* line 593, assetic_compass1t0bKW.scss */
+  .small-stamps .position-4 {
+    top: -50px;
+    left: -150px;
+    z-index: 370;
+    -webkit-transform: scale(0.4) rotate(30deg);
+    -moz-transform: scale(0.4) rotate(30deg);
+    -ms-transform: scale(0.4) rotate(30deg);
+    -o-transform: scale(0.4) rotate(30deg);
+    transform: scale(0.4) rotate(30deg);
+  }
+}
+@media screen and (min-width: 1250px) {
+  /* line 606, assetic_compass1t0bKW.scss */
+  .small-stamps .position-1 {
+    top: 0px;
+    left: -270px;
+    z-index: 400;
+    -webkit-transform: scale(0.38) rotate(-35deg);
+    -moz-transform: scale(0.38) rotate(-35deg);
+    -ms-transform: scale(0.38) rotate(-35deg);
+    -o-transform: scale(0.38) rotate(-35deg);
+    transform: scale(0.38) rotate(-35deg);
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* line 619, assetic_compass1t0bKW.scss */
+  .stamps-background {
+    width: 637px;
+    height: 409px;
+    right: 10%;
+    top: 390px;
+    background-image: url(/bundles/syscrunchstore/images/small-stamps-full.png);
+  }
+}
+/* line 628, assetic_compass1t0bKW.scss */
+.page-id-30 #content > h1, .page-id-32 #content > h1, .page-id-45 #content > h1 {
+  color: #333333;
+  text-align: center;
+}
+
+/* line 633, assetic_compass1t0bKW.scss */
+.page-id-30 #content > h2, .page-id-32 #content > h2, .page-id-45 #content > h2 {
+  text-align: left;
+}
+
+/* line 637, assetic_compass1t0bKW.scss */
+.page-id-30 #content > p, .page-id-32 #content > p, .page-id-45 #content > p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 1025px) and (min-width: 1020px) {
+  /* line 642, assetic_compass1t0bKW.scss */
+  .role-description .content {
+    width: 425px;
+    height: 375px;
+  }
+}
+@media screen and (max-width: 1020px) and (min-width: 768px) {
+  /* line 649, assetic_compass1t0bKW.scss */
+  .role-description .content {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+  }
+
+  /* line 655, assetic_compass1t0bKW.scss */
+  .role-description .content-separator {
+    float: none;
+    padding: 20px 0;
+  }
+
+  /* line 659, assetic_compass1t0bKW.scss */
+  .role-description .content ul {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 769px) {
+  /* line 665, assetic_compass1t0bKW.scss */
+  .role-description .content {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+  }
+
+  /* line 671, assetic_compass1t0bKW.scss */
+  .role-description .content-separator {
+    float: none;
+    padding: 20px 0;
+  }
+
+  /* line 675, assetic_compass1t0bKW.scss */
+  .role-description .content ul {
+    margin-bottom: 20px;
+  }
+}
+/* line 680, assetic_compass1t0bKW.scss */
+.email-registration {
+  background-color: white;
+  padding-top: 70px;
+  height: 600px;
+  padding-left: 70px;
+  padding-right: 70px;
+  box-shadow: 12px;
+  position: relative;
+  font-size: 18px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top: 5px solid #F2F2F2;
+  border-left: 5px solid #F2F2F2;
+  border-right: 5px solid #f2f2f2;
+}
+
+/* line 696, assetic_compass1t0bKW.scss */
+.email-send-logo {
+  background-image: url(/bundles/syscrunchstore/images/buho.png);
+  height: 119px;
+  width: 106px;
+  position: absolute;
+  left: 420px;
+  top: 18px;
+}
+
+/* line 705, assetic_compass1t0bKW.scss */
+.email-registration hr {
+  height: 1px;
+  background-color: black;
+  border: none;
+}
+
+/* line 711, assetic_compass1t0bKW.scss */
+.email-registration-footer {
+  height: 80px;
+  background-color: #E6E6E6;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 5px solid #F2F2F2;
+  border-left: 5px solid #F2F2F2;
+  border-right: 5px solid #f2f2f2;
+}
+
+/* line 721, assetic_compass1t0bKW.scss */
+.send-from {
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  background: white;
+  text-align: center;
+  left: 290px;
+  top: 390px;
+  width: 200px;
+  height: 130px;
+  padding: 100px;
+  position: absolute;
+}
+
+/* line 734, assetic_compass1t0bKW.scss */
+.send-from p {
+  padding-top: 20px;
+}
+
+/* line 738, assetic_compass1t0bKW.scss */
+.send-information {
+  height: 15px;
+  float: left;
+  position: static;
+  padding-left: 70px;
+  padding-right: 20px;
+  padding-top: 50px;
+}
+
+/* line 747, assetic_compass1t0bKW.scss */
+.send-information-images {
+  float: right;
+  padding-right: 15px;
+  padding-top: 50px;
+}
+
+/* line 753, assetic_compass1t0bKW.scss */
+.send-information-images br {
+  display: none;
+}
+
+/* line 757, assetic_compass1t0bKW.scss */
+.social-info {
+  float: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+/* beginning browse styles */
+/* line 773, assetic_compass1t0bKW.scss */
+body.browse {
+  background-color: #fcfdff;
+  background-image: url(/bundles/syscrunchstore/images/background.gif);
+  background-position: left top;
+  background-repeat: repeat-x;
+  background-size: auto;
+}
+/* line 779, assetic_compass1t0bKW.scss */
+body.browse a {
+  text-decoration: none;
+}
+/* line 782, assetic_compass1t0bKW.scss */
+body.browse .transparent {
+  opacity: 0;
+}
+/* line 785, assetic_compass1t0bKW.scss */
+body.browse #header {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 789, assetic_compass1t0bKW.scss */
+body.browse #header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 793, assetic_compass1t0bKW.scss */
+body.browse #header ul.top-list {
+  padding-top: 20px;
+  height: 40px;
+}
+/* line 796, assetic_compass1t0bKW.scss */
+body.browse #header ul.top-list li {
+  font-size: 16.67px;
+  padding: 0 20px;
+  line-height: 25px;
+  text-align: center;
+  height: 25px;
+}
+/* line 805, assetic_compass1t0bKW.scss */
+body.browse #header ul.top-list li:nth-child(-n+4) {
+  border-right: 1px solid #C2BEBF;
+}
+/* line 809, assetic_compass1t0bKW.scss */
+body.browse #header ul.top-list li:nth-child(n+2) {
+  border-left: 1px solid #fcfdff;
+}
+/* line 812, assetic_compass1t0bKW.scss */
+body.browse #header ul.top-list li a {
+  color: #809aa8;
+  text-transform: uppercase;
+}
+/* line 815, assetic_compass1t0bKW.scss */
+body.browse #header ul.top-list li a:hover {
+  color: #597482;
+}
+/* line 821, assetic_compass1t0bKW.scss */
+body.browse #header ul.bottom-list {
+  width: 650px;
+  height: 40px;
+  margin: 0 auto;
+}
+/* line 825, assetic_compass1t0bKW.scss */
+body.browse #header ul.bottom-list li {
+  font-size: 18.75px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 40px;
+  width: 130px;
+  text-align: center;
+}
+/* line 831, assetic_compass1t0bKW.scss */
+body.browse #header ul.bottom-list li a {
+  color: #747474;
+}
+/* line 833, assetic_compass1t0bKW.scss */
+body.browse #header ul.bottom-list li a:hover {
+  color: #4e4e4e;
+}
+/* line 840, assetic_compass1t0bKW.scss */
+body.browse #header ul li {
+  float: left;
+}
+/* line 844, assetic_compass1t0bKW.scss */
+body.browse #header .main-logo {
+  display: block;
+  background-image: url(/bundles/syscrunchstore/images/logo.png);
+  width: 460px;
+  height: 62px;
+  margin: 0 auto 40px;
+}
+/* line 850, assetic_compass1t0bKW.scss */
+body.browse #header .main-logo + .stalker {
+  margin-top: -40px;
+}
+/* line 852, assetic_compass1t0bKW.scss */
+body.browse #header .main-logo + .stalker.detached {
+  margin-top: 0;
+  position: fixed;
+  top: 0px;
+  left: calc(50% - 325px);
+  left: -o-calc(50% - 325px);
+  left: -moz-calc(50% - 325px);
+  left: -webkit-calc(50% - 325px);
+  z-index: 1000;
+}
+/* line 862, assetic_compass1t0bKW.scss */
+body.browse #content {
+  background: none;
+}
+/* line 864, assetic_compass1t0bKW.scss */
+body.browse #content .products-container {
+  padding: 20px;
+}
+/* line 866, assetic_compass1t0bKW.scss */
+body.browse #content .products-container .product {
+  margin: 10px 20px;
+  float: left;
+  position: relative;
+  width: calc((100% / 3) - 40px);
+  width: -o-calc((100% / 3) - 40px);
+  width: -moz-calc((100% / 3) - 40px);
+  width: -webkit-calc((100% / 3) - 40px);
+}
+/* line 871, assetic_compass1t0bKW.scss */
+body.browse #content .products-container .product .actions {
+  display: none;
+}
+/* line 874, assetic_compass1t0bKW.scss */
+body.browse #content .products-container .product .thumbnail {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+/* line 878, assetic_compass1t0bKW.scss */
+body.browse #content .products-container .product .thumbnail .aspect-fixer {
+  margin-top: 75%;
+}
+/* line 882, assetic_compass1t0bKW.scss */
+body.browse #content .products-container .product .thumbnail .image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: silver;
+}
+/* line 890, assetic_compass1t0bKW.scss */
+body.browse #content .products-container .product .thumbnail .image .imgc {
+  width: 100%;
+  height: 100%;
+}
+/* line 896, assetic_compass1t0bKW.scss */
+body.browse #content .products-container .product .buttons {
+  height: 45px;
+  background-color: #FFFFFF;
+}
+/* line 899, assetic_compass1t0bKW.scss */
+body.browse #content .products-container .product .buttons .demo {
+  position: relative;
+  top: -9px;
+  color: #FDFDFD;
+  background-color: #A5E6FC;
+  border: 1px solid #6CD3F4;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+/* line 910, assetic_compass1t0bKW.scss */
+body.browse #content .products-container .product .buttons .data {
+  display: inline-block;
+  width: calc(100% - 200px);
+  width: -o-calc(100% - 200px);
+  width: -moz-calc(100% - 200px);
+  width: -webkit-calc(100% - 200px);
+  height: 45px;
+}
+/* line 914, assetic_compass1t0bKW.scss */
+body.browse #content .products-container .product .buttons .data h1 {
+  margin: 0;
+  font-size: 18.11px;
+  color: #3FC9F5;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 924, assetic_compass1t0bKW.scss */
+body.browse #content .products-container .product .buttons .data h1:hover {
+  background-color: #FFFFFF;
+  position: relative;
+  z-index: 1000;
+  overflow: visible;
+}
+/* line 931, assetic_compass1t0bKW.scss */
+body.browse #content .products-container .product .buttons .data div {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 11px;
+  color: #393B3B;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 941, assetic_compass1t0bKW.scss */
+body.browse #content .products-container .product .buttons .favorite {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(/bundles/syscrunchstore/images/favorite.png);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+}
+/* line 950, assetic_compass1t0bKW.scss */
+body.browse #content .products-container .product .buttons .cart {
+  position: relative;
+  top: -9px;
+  display: inline-block;
+  color: #FDFDFD;
+  background-color: #A5E6FC;
+  border: 1px solid #6CD3F4;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 65px;
+  font-weight: bold;
+  background-image: url(/bundles/syscrunchstore/images/shoping.png);
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  background-size: 30%;
+}
+/* line 971, assetic_compass1t0bKW.scss */
+body.browse #content.boxed {
+  background-color: #FFFFFF;
+  border: 7px solid #F7F7F7;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+/* line 976, assetic_compass1t0bKW.scss */
+body.browse #content.boxed.medium {
+  width: 450px;
+  padding: 45px 95px;
+}
+/* line 980, assetic_compass1t0bKW.scss */
+body.browse #content.boxed.large {
+  width: 700px;
+  padding: 45px 95px;
+}
+/* line 984, assetic_compass1t0bKW.scss */
+body.browse #content.boxed h1 {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  color: #58636D;
+}
+/* line 989, assetic_compass1t0bKW.scss */
+body.browse #content.boxed .button {
+  display: inline-block;
+  border: 1px solid #D5D4D4;
+  border-radius: 5px;
+  padding: 10px;
+  color: #FFFFFF;
+}
+/* line 995, assetic_compass1t0bKW.scss */
+body.browse #content.boxed .button.blue-button {
+  background-color: #3B5897;
+}
+/* line 998, assetic_compass1t0bKW.scss */
+body.browse #content.boxed .button.cyan-button {
+  background-color: #2FC5F2;
+}
+/* line 1003, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* line 1009, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form fieldset > div,
+body.browse #content.boxed form > div {
+  padding-left: 35px;
+}
+/* line 1013, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form fieldset > div.form-field label,
+body.browse #content.boxed form > div.form-field label {
+  width: 90px;
+  background-color: #F5F5F5;
+  text-align: center;
+  color: #939393;
+  border: 1px solid #C8CACB;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  float: left;
+  height: 28px;
+  line-height: 28px;
+}
+/* line 1025, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form fieldset > div.form-field input,
+body.browse #content.boxed form > div.form-field input {
+  box-shadow: none;
+  height: 26px;
+  width: 285px;
+  padding: 1px;
+  background-color: #FFFFFF;
+  border: 1px solid #C8CACB;
+  border-left: none;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 1037, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form fieldset > div.form-field textarea,
+body.browse #content.boxed form > div.form-field textarea {
+  box-shadow: none;
+  height: 100px;
+  width: 285px;
+  padding: 1px;
+  margin: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #C8CACB;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 1049, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form fieldset > div.form-field select,
+body.browse #content.boxed form > div.form-field select {
+  height: 30px;
+  width: 285px;
+  padding: 1px;
+  background-color: #FFFFFF;
+  border: 1px solid #C8CACB;
+  border-left: none;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 1062, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form fieldset > div.checkbox-field ul,
+body.browse #content.boxed form > div.checkbox-field ul {
+  list-style: none;
+}
+/* line 1068, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form fieldset > div.datetime-field *[data-editor] select,
+body.browse #content.boxed form > div.datetime-field *[data-editor] select {
+  width: 50px;
+}
+/* line 1073, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form fieldset > div label,
+body.browse #content.boxed form > div label {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16.67px;
+  color: #58636D;
+}
+/* line 1079, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form fieldset > div.two-columns > div:nth-child(2),
+body.browse #content.boxed form > div.two-columns > div:nth-child(2) {
+  text-align: right;
+}
+/* line 1081, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form fieldset > div.two-columns > div:nth-child(2) a,
+body.browse #content.boxed form > div.two-columns > div:nth-child(2) a {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16.67px;
+  color: #58636D;
+  margin-right: 35px;
+}
+/* line 1089, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form fieldset > div input[type="submit"],
+body.browse #content.boxed form > div input[type="submit"] {
+  padding: 5px 10px;
+  color: #FFFFFF;
+  background-color: #0DB9E0;
+  border: 1px solid #86DCEF;
+  box-shadow: 0 0 0 1px #0981CD;
+}
+/* line 1097, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form > div#uploadercontainer {
+  height: 100px;
+  background-color: #777;
+  position: relative;
+  text-align: center;
+  padding: 0px;
+}
+/* line 1104, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form > div.media_notes {
+  padding: 0px;
+}
+/* line 1109, assetic_compass1t0bKW.scss */
+body.browse #content.boxed .third_container {
+  display: none;
+}
+/* line 1112, assetic_compass1t0bKW.scss */
+body.browse #content.boxed .third_container div p {
+  text-align: justify;
+}
+/* line 1117, assetic_compass1t0bKW.scss */
+body.browse #content.boxed .third_container #thirdAuthForm div {
+  position: relative;
+  height: 40px;
+  width: 140px;
+}
+/* line 1121, assetic_compass1t0bKW.scss */
+body.browse #content.boxed .third_container #thirdAuthForm div div.loader {
+  display: none;
+  height: 30px;
+  width: 100%;
+  background-image: url(/bundles/syscrunchstore/images/ajax-loader.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 1130, assetic_compass1t0bKW.scss */
+body.browse #content.boxed .third_container #thirdAuthForm .form-field > input.selector {
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  margin: 4px;
+}
+/* line 1147, assetic_compass1t0bKW.scss */
+body.browse #content.login h1 {
+  padding: 0 35px;
+}
+/* line 1150, assetic_compass1t0bKW.scss */
+body.browse #content.login h1 + div > div:first-child > a {
+  margin-left: 35px;
+}
+/* line 1153, assetic_compass1t0bKW.scss */
+body.browse #content.login h1 + div > div:nth-child(2) {
+  text-align: right;
+}
+/* line 1155, assetic_compass1t0bKW.scss */
+body.browse #content.login h1 + div > div:nth-child(2) > a {
+  margin-right: 35px;
+}
+/* line 1165, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form div.stalker-bar {
+  background-color: #b4b4b4;
+  background-color: rgba(180, 180, 180, 0.6);
+  position: relative;
+  height: 40px;
+  width: 700px;
+  padding: 0;
+}
+/* line 1175, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form div.stalker-bar .bar-content {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+/* line 1180, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form div.stalker-bar + .stalker-shadow {
+  padding: 0;
+}
+/* line 1183, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form div.stalker-bar.stalking {
+  position: fixed;
+  top: 0;
+  z-index: 45;
+}
+/* line 1187, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form div.stalker-bar.stalking + .stalker-shadow {
+  height: 40px;
+  width: 700px;
+}
+/* line 1193, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form h2 {
+  text-align: right;
+}
+/* line 1197, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form div .field {
+  float: left;
+  width: calc((100% / 3) - 10px);
+  width: -o-calc((100% / 3) - 10px);
+  width: -moz-calc((100% / 3) - 10px);
+  width: -webkit-calc((100% / 3) - 10px);
+  padding: 5px;
+  height: 40px;
+}
+/* line 1202, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form div .field .required {
+  float: left;
+  width: 10px;
+}
+/* line 1205, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form div .field .required + select {
+  width: calc(100% - 10px);
+  width: -o-calc(100% - 10px);
+  width: -moz-calc(100% - 10px);
+  width: -webkit-calc(100% - 10px);
+}
+/* line 1209, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form div .field .required + input[type="text"],
+body.browse #content.add-page form div .field .required + input[type="url"] {
+  width: calc(100% - 14px);
+  width: -o-calc(100% - 14px);
+  width: -moz-calc(100% - 14px);
+  width: -webkit-calc(100% - 14px);
+}
+/* line 1216, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form div .field select,
+body.browse #content.add-page form div .field input[type="text"],
+body.browse #content.add-page form div .field input[type="url"] {
+  margin: 0;
+  width: 100%;
+}
+/* line 1221, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form div .big-field {
+  float: left;
+  width: calc(100% - 10px);
+  width: -o-calc(100% - 10px);
+  width: -moz-calc(100% - 10px);
+  width: -webkit-calc(100% - 10px);
+  padding: 5px;
+}
+/* line 1225, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form div .big-field textarea {
+  margin: 0;
+  width: 100%;
+}
+/* line 1232, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form fieldset > div.form-field {
+  padding: 5px 30px;
+}
+/* line 1234, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form fieldset > div.form-field > label {
+  width: 190px;
+}
+/* line 1240, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form fieldset > div.form-field *[data-editor] input[type="text"],
+body.browse #content.add-page form fieldset > div.form-field *[data-editor] input[type="url"],
+body.browse #content.add-page form fieldset > div.form-field *[data-editor] input[type="number"] {
+  width: 410px;
+}
+/* line 1243, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form fieldset > div.form-field *[data-editor] textarea {
+  width: 409px;
+}
+/* line 1246, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form fieldset > div.form-field *[data-editor] select {
+  width: 413px;
+}
+/* line 1252, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form fieldset > div.form-field.datetime-field *[data-editor] *[data-date] {
+  float: left;
+}
+/* line 1255, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form fieldset > div.form-field.datetime-field *[data-editor] *[data-date] select:first-child {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+/* line 1261, assetic_compass1t0bKW.scss */
+body.browse #content.add-page form fieldset > div.form-field.datetime-field *[data-editor] select {
+  margin: 0;
+  width: auto;
+}
+/* line 1272, assetic_compass1t0bKW.scss */
+body.browse #footer {
+  margin-top: 30px;
+}
+/* line 1275, assetic_compass1t0bKW.scss */
+body.browse > .message {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid #F7F7F7;
+  padding: 10px;
+  float: left;
+  display: table;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+}
+/* line 1287, assetic_compass1t0bKW.scss */
+body.browse > .message .icon {
+  float: left;
+  height: 48px;
+  width: 48px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+/* line 1293, assetic_compass1t0bKW.scss */
+body.browse > .message .icon.info {
+  background-image: url(/bundles/syscrunchstore/images/info.png);
+}
+/* line 1296, assetic_compass1t0bKW.scss */
+body.browse > .message .icon.error {
+  background-image: url(/bundles/syscrunchstore/images/error.png);
+}
+/* line 1300, assetic_compass1t0bKW.scss */
+body.browse > .message .text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 1307, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form fieldset > div, body.browse #content.boxed form > div.gallery-container {
+  height: 200px;
+  background-color: #999;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 0;
+  overflow: auto;
+  width: 100%;
+}
+/* line 1316, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form fieldset > div div, body.browse #content.boxed form > div.gallery-container div {
+  width: 150px;
+  float: left;
+  height: 120px;
+}
+/* line 1320, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form fieldset > div div img, body.browse #content.boxed form > div.gallery-container div img {
+  max-width: 140px;
+  max-height: 95px;
+}
+/* line 1324, assetic_compass1t0bKW.scss */
+body.browse #content.boxed form fieldset > div div span, body.browse #content.boxed form > div.gallery-container div span {
+  font-size: 50%;
+  overflow: hidden;
+}
+
+/* line 1330, assetic_compass1t0bKW.scss */
+.uploader_container {
+  top: 40%;
+  position: relative;
+  width: 77%;
+  height: 50%;
+  margin: 0 auto;
+  z-index: 10;
+}
+/* line 1338, assetic_compass1t0bKW.scss */
+.uploader_container .file_input_button {
+  float: left;
+  height: 22px;
+  position: relative;
+  text-align: left;
+  width: 50%;
+}
+/* line 1344, assetic_compass1t0bKW.scss */
+.uploader_container .file_input_button span.basic_listener {
+  position: absolute;
+  z-index: 40;
+  width: 110px;
+  text-align: left;
+}
+/* line 1349, assetic_compass1t0bKW.scss */
+.uploader_container .file_input_button span.basic_listener input {
+  position: absolute;
+  z-index: -1;
+  width: 147px;
+}
+/* line 1357, assetic_compass1t0bKW.scss */
+.uploader_container .file_external_input_button {
+  float: left;
+  position: relative;
+  text-align: right;
+  width: 50%;
+}
+/* line 1363, assetic_compass1t0bKW.scss */
+.uploader_container .file_external_input_button span {
+  text-align: right;
+}
+
+/* line 1369, assetic_compass1t0bKW.scss */
+.media_notes p {
+  font-size: 11px;
+}
+
+/* line 1373, assetic_compass1t0bKW.scss */
+.message_back {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  font-size: 18px;
+  margin-left: -30px;
+  z-index: 0;
+}
+/* line 1380, assetic_compass1t0bKW.scss */
+.message_back i {
+  position: relative;
+  top: 5px;
+  color: #FFA500;
+}
+/* line 1385, assetic_compass1t0bKW.scss */
+.message_back span {
+  font-size: 15px;
+}
+
+/* line 1389, assetic_compass1t0bKW.scss */
+#fileupload {
+  visibility: hidden;
+}
+
+/*
+Mixins are fomething like functions for sass
+*/
+/**
+ * short to define calc
+ */
+/** Simple modifications needed for DropDownCheckList to take advantage of ThemeRoller settings */
+/* line 3, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist .ui-widget-content
+, .ui-dropdownchecklist .ui-widget-header {
+  border: none;
+}
+
+/* line 6, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-indent {
+  padding-left: 7px;
+}
+
+/* Font size of 0 on the -selector and an explicit medium on -text required to eliminate
+   descender problems within the containers and still have a valid size for the text */
+/* line 12, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-selector-wrapper
+, .ui-widget.ui-dropdownchecklist-selector-wrapper {
+  vertical-align: middle;
+  font-size: 0px;
+}
+
+/* line 16, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-selector {
+  padding: 1px 2px 2px 2px;
+  font-size: 0px;
+}
+
+/* line 20, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-text {
+  font-size: medium;
+}
+
+/* line 24, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-item
+, .ui-dropdownchecklist-item input {
+  vertical-align: middle;
+}
+
+/* line 27, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/ui.dropdownchecklist.themeroller.scss */
+.ui-dropdownchecklist-group {
+  padding: 1px 2px 2px 2px;
+}
+
+/* line 47, assetic_compasscKL0dX.scss */
+body.browse {
+  background-color: #fcfdff;
+  background-image: none;
+}
+/* line 50, assetic_compasscKL0dX.scss */
+body.browse div#wrapper {
+  /**** LOGIN / REGISTER ****/
+  /**** ROTATED SUUPORT TEXT ****/
+}
+/* line 51, assetic_compasscKL0dX.scss */
+body.browse div#wrapper header#header {
+  width: 100%;
+  clear: both;
+}
+/* line 54, assetic_compasscKL0dX.scss */
+body.browse div#wrapper header#header .base-logo {
+  width: 35%;
+  height: 40px;
+  float: left;
+  position: relative;
+}
+/* line 60, assetic_compasscKL0dX.scss */
+body.browse div#wrapper header#header .base-logo span {
+  width: 100%;
+  height: 100%;
+  background-image: url(/bundles/syscrunchstore/images/logo.png);
+  background-repeat: no-repeat;
+  background-size: 63%;
+  position: absolute;
+  background-position: right;
+}
+/* line 70, assetic_compasscKL0dX.scss */
+body.browse div#wrapper header#header .norm_shadow {
+  margin: 0 auto;
+  width: 45%;
+  height: 3px;
+  position: relative;
+  clear: both;
+  border-radius: 20px;
+  box-shadow: 0 2px 3px #eceee3;
+}
+/* line 79, assetic_compasscKL0dX.scss */
+body.browse div#wrapper header#header .base-actions {
+  width: 65%;
+  height: 40px;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+/* line 85, assetic_compasscKL0dX.scss */
+body.browse div#wrapper header#header .base-actions ul.top-list, body.browse div#wrapper header#header .base-actions .login_out_buttons, body.browse div#wrapper header#header .base-actions .basic_cart {
+  position: relative;
+  float: right;
+}
+/* line 89, assetic_compasscKL0dX.scss */
+body.browse div#wrapper header#header .base-actions ul.top-list {
+  width: 65%;
+  padding-top: 13px;
+}
+/* line 92, assetic_compasscKL0dX.scss */
+body.browse div#wrapper header#header .base-actions ul.top-list li {
+  float: right;
+  height: 20px;
+  font-size: 0.8125em;
+  padding: 0 10px;
+  border-left: 1px solid #C2BEBF;
+}
+/* line 98, assetic_compasscKL0dX.scss */
+body.browse div#wrapper header#header .base-actions ul.top-list li:nth-child(-n+4) {
+  border-right: none;
+}
+@media screen and (max-width: 1030px) {
+  /* line 106, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper header#header .base-actions ul.top-list {
+    padding-top: 11px;
+  }
+  /* line 108, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper header#header .base-actions ul.top-list li {
+    font-size: 0.4375em;
+  }
+}
+/* line 114, assetic_compasscKL0dX.scss */
+body.browse div#wrapper header#header .base-actions .login_out_buttons {
+  width: 25%;
+  padding-top: 12px;
+}
+/* line 117, assetic_compasscKL0dX.scss */
+body.browse div#wrapper header#header .base-actions .login_out_buttons div {
+  float: left;
+  width: 40%;
+  text-align: center;
+  margin: 0 5px;
+  background-color: #41e1e1;
+  color: #fcfdff;
+  text-transform: uppercase;
+  padding: 3px;
+  cursor: pointer;
+  box-shadow: 2px 2px 1px #2ea9a7;
+}
+@media screen and (max-width: 1030px) {
+  /* line 134, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper header#header .base-actions .login_out_buttons {
+    width: 25%;
+  }
+  /* line 136, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper header#header .base-actions .login_out_buttons div {
+    font-size: 0.5625em;
+    padding: 1px 0;
+  }
+}
+/* line 143, assetic_compasscKL0dX.scss */
+body.browse div#wrapper header#header .base-actions .basic_cart {
+  width: 10%;
+  line-height: 40px;
+  margin-top: 5px;
+  vertical-align: middle;
+  font-size: 9px;
+  position: relative;
+  background-position: center;
+  background-image: url(/bundles/syscrunchstore/images/icon_cart.png);
+  background-repeat: no-repeat;
+}
+/* line 153, assetic_compasscKL0dX.scss */
+body.browse div#wrapper header#header .base-actions .basic_cart span.in_cart {
+  font-size: 9px;
+}
+/* line 160, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  background-image: url("/bundles/syscrunchstore/images/gradient_header.png");
+  position: relative;
+}
+/* line 167, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div {
+  height: 100%;
+  float: left;
+}
+/* line 171, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.category {
+  width: 60%;
+}
+/* line 173, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.category .breadcrumb_container {
+  display: none;
+  width: 65%;
+  text-align: right;
+  text-transform: uppercase;
+}
+/* line 178, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.category .breadcrumb_container span {
+  color: #fcfdff;
+  line-height: 40px;
+  font-size: 0.625em;
+}
+/* line 182, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.category .breadcrumb_container span.separator {
+  margin: 0 1px;
+}
+/* line 185, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.category .breadcrumb_container span:last-child {
+  margin-right: 10px;
+  color: #0662a3;
+}
+/* line 191, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.category .breadcrumb_container div {
+  float: right;
+  text-align: center;
+}
+/* line 198, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.category .start_here {
+  width: 60%;
+}
+/* line 200, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.category .start_here div {
+  float: right;
+  text-align: center;
+  background-position: right center;
+}
+/* line 205, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.category .start_here .start_here_arrow {
+  width: 10%;
+  background-image: url("/bundles/syscrunchstore/images/arrow.png");
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+/* line 212, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.category .start_here .start_here_logo {
+  width: 25%;
+  background-image: url("/bundles/syscrunchstore/images/start_here.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media screen and (max-width: 1030px) {
+  /* line 220, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper div.b_bar_container div.category .start_here {
+    width: 45%;
+  }
+}
+/* line 224, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.category .cat_buttons_power_filters {
+  display: none;
+  width: 35%;
+  position: relative;
+  text-align: center;
+}
+/* line 229, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.category .cat_buttons_power_filters div {
+  width: 60%;
+  margin: 0 auto;
+  float: center;
+  text-align: center;
+  line-height: 40px;
+}
+/* line 235, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.category .cat_buttons_power_filters div a {
+  width: 45px;
+  height: 37px;
+  position: relative;
+  display: inline-block;
+}
+@media screen and (max-width: 1030px) {
+  /* line 245, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper div.b_bar_container div.category .cat_buttons_power_filters {
+    width: 35%;
+  }
+  /* line 247, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper div.b_bar_container div.category .cat_buttons_power_filters div {
+    width: 90%;
+  }
+  /* line 249, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper div.b_bar_container div.category .cat_buttons_power_filters div a {
+    top: 5px;
+    width: 30px;
+  }
+  /* line 252, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper div.b_bar_container div.category .cat_buttons_power_filters div a img {
+    width: 30px;
+  }
+}
+/* line 261, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.category .cat_buttons {
+  width: 40%;
+}
+/* line 264, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.category .cat_buttons ul.cat_buttons_container {
+  display: inline;
+  list-style: none outside none;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+}
+/* line 270, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.category .cat_buttons ul.cat_buttons_container li {
+  background-color: #7bdefd;
+  border-radius: 6px;
+  border: 1px solid #fcfdff;
+  float: left;
+  margin-right: 7px;
+  margin-top: 6px;
+  text-align: center;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1030px) {
+  /* line 284, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper div.b_bar_container div.category .cat_buttons ul.cat_buttons_container li {
+    font-size: 11px;
+    margin-top: 9px;
+  }
+}
+/* line 296, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.search {
+  width: 40%;
+}
+/* line 298, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.search div {
+  float: left;
+  width: 50%;
+}
+/* line 304, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.search .sear_bar input {
+  float: right;
+  border: 1px solid #fcfdff;
+  border-radius: 6px;
+  margin-top: 7px;
+  height: 20px;
+  padding: 2px 20px 2px 10px;
+  position: relative;
+  background-color: #fdfbfb;
+  background-image: url("/bundles/syscrunchstore/images/glass.png");
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  width: 80%;
+}
+/* line 322, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.search .social_bar ul.social_ntwrks {
+  list-style: none outside none;
+  margin: 8px 0 0 10px;
+  padding: 0px;
+}
+/* line 326, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.search .social_bar ul.social_ntwrks li {
+  float: left;
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+}
+/* line 331, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.search .social_bar ul.social_ntwrks li a {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  outline: none;
+}
+/* line 339, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.search .social_bar ul.social_ntwrks li .fb {
+  background-image: url("/bundles/syscrunchstore/images/f.png");
+}
+/* line 342, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.search .social_bar ul.social_ntwrks li .tw {
+  background-image: url("/bundles/syscrunchstore/images/t.png");
+}
+/* line 345, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.search .social_bar ul.social_ntwrks li .in {
+  background-image: url("/bundles/syscrunchstore/images/in.png");
+}
+/* line 348, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.b_bar_container div.search .social_bar ul.social_ntwrks li .gp {
+  background-image: url("/bundles/syscrunchstore/images/gp.png");
+}
+/* line 356, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container {
+  width: 100%;
+  position: relative;
+  height: 40px;
+}
+/* line 361, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container div {
+  float: left;
+  height: 30px;
+  position: relative;
+}
+/* line 366, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .pwrfilters {
+  width: 30%;
+  margin: 5px 0;
+}
+/* line 369, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .pwrfilters .icon_show {
+  width: 40%;
+}
+/* line 371, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .pwrfilters .icon_show .pwrfilters_indicator {
+  cursor: pointer;
+  margin-left: 20px;
+}
+/* line 374, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .pwrfilters .icon_show .pwrfilters_indicator img {
+  float: left;
+}
+/* line 377, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .pwrfilters .icon_show .pwrfilters_indicator div.powerfilterslabel {
+  float: left;
+  margin-left: 5px;
+  color: #a5a6a6;
+  font-size: 10px;
+  padding-top: 6px;
+}
+/* line 386, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .pwrfilters .paginator_filtered {
+  float: right;
+  width: 60%;
+  display: none;
+}
+/* line 390, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .pwrfilters .paginator_filtered .arrow_container {
+  width: 100%;
+  padding-top: 3px;
+  display: none;
+}
+/* line 394, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .pwrfilters .paginator_filtered .arrow_container ul.paginator_cont {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 400, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .pwrfilters .paginator_filtered .arrow_container ul.paginator_cont li {
+  float: left;
+  width: 20%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  content: "";
+}
+/* line 408, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .pwrfilters .paginator_filtered .arrow_container ul.paginator_cont li.first {
+  background-image: url("/bundles/syscrunchstore/images/arrow-points.png");
+}
+/* line 411, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .pwrfilters .paginator_filtered .arrow_container ul.paginator_cont li.prev {
+  background-image: url("/bundles/syscrunchstore/images/arrow-point.png");
+}
+/* line 414, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .pwrfilters .paginator_filtered .arrow_container ul.paginator_cont li.pnumber {
+  font-size: 9px;
+  text-align: center;
+  margin-top: 2%;
+}
+/* line 419, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .pwrfilters .paginator_filtered .arrow_container ul.paginator_cont li.next {
+  background-image: url("/bundles/syscrunchstore/images/arrow-point.png");
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 427, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .pwrfilters .paginator_filtered .arrow_container ul.paginator_cont li.last {
+  background-image: url("/bundles/syscrunchstore/images/arrow-points.png");
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 442, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .suggested {
+  width: 40%;
+  margin: 3px 0 5px 0;
+}
+/* line 445, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .suggested .centered_area {
+  margin: 0 auto;
+  float: none;
+  width: 45%;
+  background-color: #2bc7ea;
+}
+/* line 451, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .suggested .centered_area .arrow_down {
+  width: 20%;
+  background-image: url("/bundles/syscrunchstore/images/down.png");
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+}
+/* line 457, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .suggested .centered_area .check_suggested {
+  width: 80%;
+  color: #fcfdff;
+  font-size: 12px;
+  margin-top: 7px;
+}
+@media screen and (max-width: 1030px) {
+  /* line 464, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper .nav_bar_container .suggested .centered_area .check_suggested {
+    font-size: 0.75em;
+    overflow: hidden;
+    width: 103px;
+    height: 18px;
+    line-height: 15px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  /* line 478, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper .nav_bar_container .suggested {
+    width: 30%;
+  }
+  /* line 480, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper .nav_bar_container .suggested .centered_area {
+    width: 60%;
+  }
+}
+/* line 486, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .right_region_sort_filtered {
+  width: 30%;
+  margin: 5px 0;
+}
+/* line 489, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .right_region_sort_filtered .label {
+  font-size: 12px;
+  line-height: 25px;
+  margin-right: 5px;
+  text-align: right;
+  width: 25%;
+}
+/* line 496, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .right_region_sort_filtered .inputdata {
+  background: url("/bundles/syscrunchstore/images/arrown_selector_sort_4p.png") no-repeat right #efefef;
+  border: 1px solid #C2C1C1;
+  width: 45%;
+  overflow: hidden;
+  position: relative;
+  height: 23px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 2px;
+  border-radius: 5px;
+}
+/* line 507, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .right_region_sort_filtered .inputdata select {
+  background: none repeat scroll 0 0 transparent;
+  color: #404040;
+  border: 0 none;
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  -moz-appearance: toolbox;
+  -webkit-appearance: none;
+}
+/* line 518, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .right_region_sort_filtered .desc {
+  width: 25%;
+}
+/* line 520, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .right_region_sort_filtered .desc .box_detail_container {
+  width: 70%;
+  margin-left: 15px;
+  height: 20px;
+  font-size: 10px;
+}
+/* line 525, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .right_region_sort_filtered .desc .box_detail_container div.detail:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  margin: -10px 0 0;
+  border-right: 10px solid #eae9ea;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+/* line 535, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .nav_bar_container .right_region_sort_filtered .desc .box_detail_container .detail {
+  width: 100%;
+  background: #eae9ea;
+  padding: 2px;
+  position: relative;
+  border-radius: 5px;
+  height: 20px;
+  border-right: 1px solid #eae9ea;
+  border-top: 1px solid #eae9ea;
+  border-bottom: 1px solid #eae9ea;
+  line-height: 17px;
+}
+@media screen and (max-width: 1030px) {
+  /* line 551, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper .nav_bar_container .right_region_sort_filtered {
+    width: 35%;
+  }
+  /* line 553, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper .nav_bar_container .right_region_sort_filtered .label {
+    width: 10%;
+    overflow: hidden;
+  }
+  /* line 557, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper .nav_bar_container .right_region_sort_filtered .inputdata {
+    width: 55%;
+  }
+  /* line 560, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper .nav_bar_container .right_region_sort_filtered .desc {
+    width: 30%;
+  }
+  /* line 562, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper .nav_bar_container .right_region_sort_filtered .desc .box_detail_container {
+    width: 75%;
+  }
+}
+/* line 573, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product {
+  float: left;
+  margin: 10px;
+  position: relative;
+  width: calc(100%/4 - 20px);
+  background-color: #f2f1f1;
+  border-radius: 3px;
+}
+/* line 580, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .thumbnail {
+  box-shadow: 0 2px 0 #6D6E6E;
+  cursor: pointer;
+}
+/* line 584, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .base_bottom_shadow {
+  height: 6px;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+}
+/* line 590, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .base_bottom_shadow .line {
+  margin: 0 auto;
+  height: 3px;
+  width: 90%;
+  box-shadow: 0 0 8px black;
+  border-radius: 13px;
+  margin-top: -3px;
+}
+/* line 599, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo {
+  padding: 10px 5px 10px 15px;
+  height: 50px;
+}
+/* line 602, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .title_cost {
+  width: 100%;
+  height: 25px;
+  clear: both;
+}
+/* line 606, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .title_cost .title {
+  width: 70%;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 612, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .title_cost .cost_tag {
+  width: 30%;
+  float: left;
+  margin-top: -4px;
+}
+/* line 616, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .title_cost .cost_tag span {
+  float: right;
+  margin-right: 10px;
+  padding: 3px 30px 3px 5px;
+  background-repeat: no-repeat;
+  background-image: url("/bundles/syscrunchstore/images/tag_cost.png");
+  background-size: 91% 100%;
+}
+/* line 626, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions {
+  width: 100%;
+  clear: both;
+  height: 25px;
+}
+/* line 631, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .onebutton {
+  width: 60%;
+  float: left;
+}
+/* line 634, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .onebutton ul.actions_template {
+  list-style: none outside none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 22px;
+}
+/* line 640, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .onebutton ul.actions_template li {
+  float: left;
+  height: 22px;
+  margin-right: 2px;
+  width: 22px;
+  background-repeat: no-repeat;
+}
+/* line 646, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .onebutton ul.actions_template li a {
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+/* line 652, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .onebutton ul.actions_template li.favorite {
+  background-image: url("/bundles/syscrunchstore/images/base_firstsactions.png");
+  background-position: 0 1px;
+}
+/* line 658, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .onebutton ul.actions_template li.see {
+  background-image: url("/bundles/syscrunchstore/images/base_firstsactions.png");
+  background-position: -22px 1px;
+}
+/* line 662, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .onebutton ul.actions_template li.comment {
+  background-image: url("/bundles/syscrunchstore/images/base_firstsactions.png");
+  background-position: -44px 1px;
+}
+/* line 666, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .onebutton ul.actions_template li.award {
+  background-image: url("/bundles/syscrunchstore/images/second_group.png");
+  background-position: 5px -4px;
+}
+/* line 670, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .onebutton ul.actions_template li.tournament {
+  background-image: url("/bundles/syscrunchstore/images/second_group.png");
+  background-position: -16px -4px;
+}
+/* line 674, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .onebutton ul.actions_template li.honor {
+  background-image: url("/bundles/syscrunchstore/images/second_group.png");
+  background-position: -41px -4px;
+}
+/* line 679, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .onebutton ul.actions_template li:nth-child(1) {
+  margin-left: -5px;
+}
+/* line 682, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .onebutton ul.actions_template li:nth-child(4) {
+  background-color: #f2f1f1;
+  width: 1px;
+}
+@media screen and (max-width: 1030px) {
+  /* line 688, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .onebutton ul.actions_template li {
+    width: 18px;
+  }
+  /* line 691, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .onebutton ul.actions_template li.honor {
+    width: 23px;
+  }
+}
+/* line 701, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .raiting {
+  width: 40%;
+  float: left;
+}
+/* line 704, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .raiting ul {
+  list-style: none outside none;
+  padding: 0;
+  margin: 0;
+}
+/* line 708, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .raiting ul li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-image: url("/bundles/syscrunchstore/images/star_empty.png");
+  background-repeat: no-repeat;
+}
+/* line 716, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .raiting ul.percent90 li:nth-child(-n+4) {
+  background-image: url("/bundles/syscrunchstore/images/star_full.png");
+}
+/* line 719, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .raiting ul.percent90 li:nth-child(5) {
+  background-image: url("/bundles/syscrunchstore/images/star_half.png");
+}
+/* line 724, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .raiting ul.percent80 li:nth-child(-n+4) {
+  background-image: url("/bundles/syscrunchstore/images/star_full.png");
+}
+/* line 729, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .raiting ul.percent70 li:nth-child(-n+3) {
+  background-image: url("/bundles/syscrunchstore/images/star_full.png");
+}
+/* line 732, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .raiting ul.percent70 li:nth-child(4) {
+  background-image: url("/bundles/syscrunchstore/images/star_half.png");
+}
+/* line 737, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .raiting ul.percent60 li:nth-child(-n+3) {
+  background-image: url("/bundles/syscrunchstore/images/star_full.png");
+}
+/* line 742, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .raiting ul.percent50 li:nth-child(-n+2) {
+  background-image: url("/bundles/syscrunchstore/images/star_full.png");
+}
+/* line 745, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .raiting ul.percent50 li:nth-child(3) {
+  background-image: url("/bundles/syscrunchstore/images/star_half.png");
+}
+/* line 750, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .raiting ul.percent40 li:nth-child(-n+2) {
+  background-image: url("/bundles/syscrunchstore/images/star_full.png");
+}
+/* line 755, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .raiting ul.percent30 li:nth-child(-n+1) {
+  background-image: url("/bundles/syscrunchstore/images/star_full.png");
+}
+/* line 758, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .raiting ul.percent30 li:nth-child(2) {
+  background-image: url("/bundles/syscrunchstore/images/star_half.png");
+}
+/* line 763, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .raiting ul.percent20 li:nth-child(-n+1) {
+  background-image: url("/bundles/syscrunchstore/images/star_full.png");
+}
+/* line 768, assetic_compasscKL0dX.scss */
+body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .raiting ul.percent10 li:nth-child(1) {
+  background-image: url("/bundles/syscrunchstore/images/star_half.png");
+}
+@media screen and (max-width: 1023px) {
+  /* line 777, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper #content .products-container .product .baseinfo .base_actions .raiting .raiting ul li {
+    width: 18px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 790, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper #content .products-container .product {
+    width: calc(100%/3 - 20px);
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 795, assetic_compasscKL0dX.scss */
+  body.browse div#wrapper #content .products-container .product {
+    width: calc(100%/2 - 20px);
+  }
+}
+/* line 802, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane {
+  display: none;
+  position: absolute;
+  top: 95px;
+  width: 260px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+/* line 810, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .cloud {
+  width: 100%;
+  margin: 5px 0 20px 0;
+  text-align: center;
+}
+/* line 815, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .cloud span {
+  margin: 5px;
+}
+/* line 817, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .cloud span.blue {
+  color: #54d0d8;
+}
+/* line 820, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .cloud span.pond10 {
+  font-size: 10px;
+}
+/* line 823, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .cloud span.pond20 {
+  font-size: 12px;
+}
+/* line 826, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .cloud span.pond30 {
+  font-size: 14px;
+}
+/* line 829, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .cloud span.pond40 {
+  font-size: 15px;
+}
+/* line 832, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .cloud span.pond50 {
+  font-size: 16px;
+}
+/* line 835, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .cloud span.pond60 {
+  font-size: 17px;
+}
+/* line 838, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .cloud span.pond70 {
+  font-size: 18px;
+}
+/* line 841, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .cloud span.pond80 {
+  font-size: 19px;
+}
+/* line 844, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .cloud span.pond90 {
+  font-size: 20px;
+}
+/* line 847, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .cloud span.pond100 {
+  font-size: 21px;
+}
+/* line 854, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .button_return {
+  float: right;
+  width: 30px;
+  height: 30px;
+  clear: both;
+  cursor: pointer;
+}
+/* line 860, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .button_return img {
+  /* Firefox */
+  -moz-transform: rotate(180deg);
+  /* Safari and Chrome */
+  -webkit-transform: rotate(180deg);
+  /* Opera */
+  -o-transform: rotate(180deg);
+  /* IE9 */
+  -ms-transform: rotate(180deg);
+}
+/* line 872, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container {
+  margin: 20px 40px 20px 30px;
+  position: relative;
+}
+/* line 877, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .header {
+  background-image: url("/bundles/syscrunchstore/images/arrowdown.png");
+  padding-left: 30px;
+  height: 20px;
+  background-position: left 2px;
+  background-repeat: no-repeat;
+  text-align: justify;
+}
+/* line 887, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow {
+  position: relative;
+}
+/* line 890, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field {
+  position: relative;
+  margin-top: 7px;
+  background-repeat: no-repeat;
+}
+/* line 895, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .simple_tag_selected_container, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .simple_tag_selected_container {
+  margin-left: 30px;
+}
+/* line 897, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .simple_tag_selected_container .basic_filter, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .simple_tag_selected_container .basic_filter {
+  height: 20px;
+}
+/* line 899, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .simple_tag_selected_container .basic_filter .legend, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .simple_tag_selected_container .basic_filter .legend {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+/* line 904, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .simple_tag_selected_container .basic_filter .delete_element, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .simple_tag_selected_container .basic_filter .delete_element {
+  float: left;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  background-image: url("/bundles/syscrunchstore/images/xelement.png");
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+  cursor: pointer;
+}
+/* line 918, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container {
+  margin-left: 30px;
+}
+/* line 920, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container .slider, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container .slider {
+  text-align: center;
+}
+/* line 923, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container .slider .rule hr, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container .slider .rule hr {
+  width: 100%;
+  display: block;
+  height: 0px;
+  border: 0;
+  border-top: 2px solid #72ddf4;
+  border-bottom: 1px solid #a0a09e;
+  padding: 0;
+}
+/* line 933, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container .slider .slide, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container .slider .slide {
+  width: 10px;
+  height: 10px;
+  background-image: url("/bundles/syscrunchstore/images/fslide.png");
+  background-repeat: no-repeat;
+  float: left;
+  margin-top: -6px;
+  cursor: pointer;
+}
+/* line 942, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container .slider .elementinf, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container .slider .elementinf {
+  margin-left: -5px;
+}
+/* line 946, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container .slider .elementsup, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container .slider .elementsup {
+  float: right;
+  margin-right: -3px;
+}
+/* line 952, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container ul.starts_container, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container ul.starts_container {
+  list-style-type: none;
+  height: 25px;
+  padding: 0;
+  margin: 20px 0 0 0;
+  background-repeat: no-repeat;
+}
+/* line 959, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container ul.starts_container li.star, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container ul.starts_container li.star {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-image: url("/bundles/syscrunchstore/images/fstar1.png");
+  background-repeat: no-repeat;
+  background-size: 20px 15px;
+}
+/* line 968, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container ul.starts_container.l90 li:nth-child(-n+4), body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container ul.starts_container.l90 li:nth-child(-n+4) {
+  background-image: url("/bundles/syscrunchstore/images/fstar.png");
+}
+/* line 971, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container ul.starts_container.l90 li:nth-child(5), body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container ul.starts_container.l90 li:nth-child(5) {
+  background-image: url("/bundles/syscrunchstore/images/fhalfstar.png");
+}
+/* line 976, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container ul.starts_container.l80 li:nth-child(-n+4), body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container ul.starts_container.l80 li:nth-child(-n+4) {
+  background-image: url("/bundles/syscrunchstore/images/fstar.png");
+}
+/* line 981, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container ul.starts_container.l70 li:nth-child(-n+3), body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container ul.starts_container.l70 li:nth-child(-n+3) {
+  background-image: url("/bundles/syscrunchstore/images/fstar.png");
+}
+/* line 984, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container ul.starts_container.l70 li:nth-child(4), body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container ul.starts_container.l70 li:nth-child(4) {
+  background-image: url("/bundles/syscrunchstore/images/fhalfstar.png");
+}
+/* line 989, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container ul.starts_container.l60 li:nth-child(-n+3), body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container ul.starts_container.l60 li:nth-child(-n+3) {
+  background-image: url("/bundles/syscrunchstore/images/fstar.png");
+}
+/* line 994, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container ul.starts_container.l50 li:nth-child(-n+2), body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container ul.starts_container.l50 li:nth-child(-n+2) {
+  background-image: url("/bundles/syscrunchstore/images/fstar.png");
+}
+/* line 997, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container ul.starts_container.l50 li:nth-child(3), body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container ul.starts_container.l50 li:nth-child(3) {
+  background-image: url("/bundles/syscrunchstore/images/fhalfstar.png");
+}
+/* line 1002, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container ul.starts_container.l40 li:nth-child(-n+2), body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container ul.starts_container.l40 li:nth-child(-n+2) {
+  background-image: url("/bundles/syscrunchstore/images/fstar.png");
+}
+/* line 1007, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container ul.starts_container.l30 li:nth-child(-n+1), body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container ul.starts_container.l30 li:nth-child(-n+1) {
+  background-image: url("/bundles/syscrunchstore/images/fstar.png");
+}
+/* line 1010, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container ul.starts_container.l30 li:nth-child(2), body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container ul.starts_container.l30 li:nth-child(2) {
+  background-image: url("/bundles/syscrunchstore/images/fhalfstar.png");
+}
+/* line 1015, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container ul.starts_container.l20 li:nth-child(-n+1), body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container ul.starts_container.l20 li:nth-child(-n+1) {
+  background-image: url("/bundles/syscrunchstore/images/fstar.png");
+}
+/* line 1020, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container ul.starts_container.l10 li:nth-child(1), body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container ul.starts_container.l10 li:nth-child(1) {
+  background-image: url("/bundles/syscrunchstore/images/fhalfstar.png");
+}
+/* line 1026, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container .limits, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container .limits {
+  height: 20px;
+  margin-top: 20px;
+}
+/* line 1030, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container .limits .limit_int, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container .limits .limit_int {
+  width: 40%;
+}
+/* line 1033, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container .limits .limit_full, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container .limits .limit_full {
+  width: 100%;
+}
+/* line 1036, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container .limits .inferior_limit, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container .limits .inferior_limit {
+  float: left;
+  text-align: left;
+}
+/* line 1040, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .slider_container .limits .superior_limit, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .slider_container .limits .superior_limit {
+  float: right;
+  text-align: right;
+}
+/* line 1046, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .basicoption_container, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .basicoption_container {
+  margin-left: 30px;
+}
+/* line 1049, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .basicoption_container .simple_filter, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .basicoption_container .simple_filter {
+  height: 15px;
+}
+/* line 1051, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .basicoption_container .simple_filter .checked_element, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .basicoption_container .simple_filter .checked_element {
+  position: relative;
+  width: 12px;
+  float: left;
+  height: 12px;
+  background-image: url("/bundles/syscrunchstore/images/fcheck.png");
+  background-size: 100%;
+  margin-right: 5px;
+}
+/* line 1059, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .basicoption_container .simple_filter .checked_element.on, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .basicoption_container .simple_filter .checked_element.on {
+  background-image: url("/bundles/syscrunchstore/images/fchecked.png");
+  background-size: 100%;
+}
+/* line 1064, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .basicoption_container .simple_filter .legend, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .basicoption_container .simple_filter .legend {
+  float: left;
+  width: calc(100% - 20px);
+}
+/* line 1072, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .fancy_input_select, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .fancy_input_select {
+  margin-left: 30px;
+  background: url("/bundles/syscrunchstore/images/arrown_selector_sort_4p.png") no-repeat right #efefef;
+  border: 1px solid #C2C1C1;
+  width: calc(100% - 30px);
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+}
+/* line 1082, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .fancy_input_select select, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .fancy_input_select select {
+  background: none repeat scroll 0 0 transparent;
+  color: #404040;
+  border: 0 none;
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  -moz-appearance: toolbox;
+  -webkit-appearance: none;
+}
+/* line 1094, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .only_one_option_container, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .only_one_option_container {
+  margin-left: 30px;
+}
+/* line 1097, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .only_one_option_container .only_one_selected_fancy_filter, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .only_one_option_container .only_one_selected_fancy_filter {
+  height: 15px;
+}
+/* line 1099, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .only_one_option_container .only_one_selected_fancy_filter .checked_element, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .only_one_option_container .only_one_selected_fancy_filter .checked_element {
+  position: relative;
+  width: 13px;
+  float: left;
+  height: 13px;
+  background-image: url("/bundles/syscrunchstore/images/fradio.png");
+  background-size: 100%;
+  margin-right: 5px;
+}
+/* line 1107, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .only_one_option_container .only_one_selected_fancy_filter .checked_element.on, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .only_one_option_container .only_one_selected_fancy_filter .checked_element.on {
+  background-image: url("/bundles/syscrunchstore/images/fselected_radio.png");
+  background-size: 100%;
+}
+/* line 1112, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .only_one_option_container .only_one_selected_fancy_filter .legend, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .only_one_option_container .only_one_selected_fancy_filter .legend {
+  float: left;
+  width: calc(100% - 20px);
+}
+/* line 1118, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .option_container, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .option_container {
+  margin-left: 30px;
+}
+/* line 1120, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .option_container .basic_filter, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .option_container .basic_filter {
+  height: 15px;
+}
+/* line 1122, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .option_container .basic_filter .checked_element, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .option_container .basic_filter .checked_element {
+  position: relative;
+  width: 12px;
+  float: left;
+  height: 12px;
+  background-image: url("/bundles/syscrunchstore/images/fcheck.png");
+  background-size: 100%;
+  margin-right: 5px;
+}
+/* line 1130, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .option_container .basic_filter .checked_element.on, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .option_container .basic_filter .checked_element.on {
+  background-image: url("/bundles/syscrunchstore/images/fchecked.png");
+  background-size: 100%;
+}
+/* line 1135, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .option_container .basic_filter .legend, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .option_container .basic_filter .legend {
+  float: left;
+  width: calc(100% - 20px);
+}
+/* line 1142, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .basic_filter_c, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .basic_filter_c {
+  position: relative;
+}
+/* line 1145, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .basic_filter_c .basic_filter, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .basic_filter_c .basic_filter {
+  position: relative;
+  width: 100%;
+  height: 15px;
+}
+/* line 1150, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .basic_filter_c .basic_filter .checked_element, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .basic_filter_c .basic_filter .checked_element {
+  width: 12px;
+  height: 12px;
+  float: left;
+  background-image: url("/bundles/syscrunchstore/images/fcheck.png");
+  background-size: 100%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+/* line 1159, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .basic_filter_c .basic_filter .checked_element.on, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .basic_filter_c .basic_filter .checked_element.on {
+  background-image: url("/bundles/syscrunchstore/images/fchecked.png");
+  background-size: 100%;
+}
+/* line 1165, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.filter_pane .basic_container .field_container .inner_field .basic_filter_c .basic_filter .legend, body.browse div#wrapper div.filter_pane .basic_container .field_container_width_arrow .inner_field .basic_filter_c .basic_filter .legend {
+  float: left;
+  width: calc(100% - 30px);
+}
+/* line 1181, assetic_compasscKL0dX.scss */
+body.browse div#wrapper footer#footer {
+  background-image: none;
+  background-color: #E7E6E6;
+}
+/* line 1184, assetic_compasscKL0dX.scss */
+body.browse div#wrapper footer#footer .logo_container {
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-top: 3px;
+}
+/* line 1189, assetic_compasscKL0dX.scss */
+body.browse div#wrapper footer#footer .logo_container .logo {
+  width: 28px;
+  height: 20px;
+  clear: both;
+  background-image: url("/bundles/syscrunchstore/images/sc_logo.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+/* line 1198, assetic_compasscKL0dX.scss */
+body.browse div#wrapper footer#footer .logo_container .rights {
+  clear: both;
+  line-height: 20px;
+  margin: 0 auto;
+  width: 250px;
+}
+/* line 1208, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.main-login-header {
+  width: 100%;
+}
+/* line 1211, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.main-login-header .right-side {
+  float: right;
+  width: 30%;
+}
+/* line 1217, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.main-login-header .right-side .sugg .signup-sug {
+  float: left;
+  cursor: pointer;
+}
+/* line 1220, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.main-login-header .right-side .sugg .signup-sug span {
+  font-size: 13px;
+  line-height: 22px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* line 1228, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.main-login-header .right-side .sugg .signup {
+  float: left;
+  width: 20%;
+  text-align: center;
+  margin: 0 5px;
+  background-color: #ffce89;
+  color: #e2811a;
+  padding: 3px;
+  font-size: 13px;
+  box-shadow: 2px 2px 1px #2ea9a7;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* line 1246, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.main-login-header .left_side {
+  position: relative;
+  float: left;
+  margin-left: 100px;
+  top: -8px;
+}
+/* line 1251, assetic_compasscKL0dX.scss */
+body.browse div#wrapper div.main-login-header .left_side .back_container {
+  cursor: pointer;
+  width: 30px;
+  height: 40px;
+  background-image: url(/bundles/syscrunchstore/images/arrow_return.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 1264, assetic_compasscKL0dX.scss */
+body.browse div#wrapper .support-layer {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  position: absolute;
+  top: 30%;
+  left: 0%;
+}
+/* line 1277, assetic_compasscKL0dX.scss */
+body.browse.login {
+  background-image: url(/bundles/syscrunchstore/images/background_login.png);
+  background-repeat: repeat;
+}
+/* line 1282, assetic_compasscKL0dX.scss */
+body.browse.login div#wrapper .main-login-header {
+  color: #fcfcfe;
+  margin-top: 10px;
+}
+/* line 1289, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login {
+  margin-top: 5%;
+  text-align: center;
+  width: 100%;
+}
+/* line 1296, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .logo-cont .logo-thanks {
+  margin-top: 8%;
+}
+/* line 1298, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .logo-cont .logo-thanks img {
+  width: 25%;
+}
+/* line 1303, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .logo-cont img {
+  width: 30%;
+}
+/* line 1308, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .thanks-main {
+  color: #fcfcfe;
+  margin-top: 3%;
+}
+/* line 1312, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .thanks-main span {
+  font-size: 1.8em;
+}
+/* line 1316, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .thanks-main .thank-msg {
+  border: 1px solid #FECF89;
+  border-radius: 7px;
+  margin-top: 3%;
+  margin-left: 28%;
+  margin-right: 28%;
+  padding: 15px 1px;
+}
+/* line 1325, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .thanks-main .ts-share {
+  margin-top: 3%;
+  font-weight: bold;
+}
+/* line 1329, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .thanks-main .ts-share .ts-social {
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+/* line 1333, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .thanks-main .ts-share .ts-social img {
+  cursor: pointer;
+}
+/* line 1338, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .thanks-main .ts-share a {
+  margin: 0 auto;
+  min-height: 40px;
+  background-color: #FFCE89;
+  box-shadow: 7px 14px 6px -12px #fcfcfe inset;
+  width: 170px;
+  color: #F58C1B;
+  line-height: 40px;
+  font-weight: bold;
+  border-radius: 7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  padding: 10px;
+}
+/* line 1353, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .thanks-main .ts-share a span {
+  font-size: 1.1em;
+}
+/* line 1360, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .reg-cont-message {
+  display: none;
+}
+/* line 1364, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont {
+  margin-top: 2%;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+/* line 1368, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont div:nth-child(1) {
+  margin-bottom: 20px;
+}
+/* line 1371, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont div.login-with-container {
+  margin-bottom: 15px;
+}
+/* line 1374, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont div.login-with-container span.login-with {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fcfcfe;
+}
+/* line 1381, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont .btn-cont {
+  font-size: 17px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  line-height: 40px;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid #939192;
+}
+/* line 1392, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont .btn-cont:hover {
+  border: 2px solid #f7821b;
+}
+/* line 1395, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont .btn-cont a {
+  margin: 0px;
+  padding: 0px;
+  color: #8b8b8b;
+  padding-left: 55%;
+  text-align: left;
+}
+/* line 1402, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont .btn-cont .cyan-button {
+  background-image: url(/bundles/syscrunchstore/images/log_tw.png);
+  background-repeat: no-repeat;
+  background-position: 25% 2px, 40% 2px;
+}
+/* line 1407, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont .btn-cont .blue-button {
+  background-image: url(/bundles/syscrunchstore/images/log_fb.png);
+  background-repeat: no-repeat;
+  background-position: 25% 2px, 40% 2px;
+}
+/* line 1412, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont .btn-cont .gray-button {
+  background-image: url(/bundles/syscrunchstore/images/log_email.png);
+  background-repeat: no-repeat;
+  background-position: 25% 2px, 40% 2px;
+}
+/* line 1418, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont .btn-cont.gplus {
+  background-image: url(/bundles/syscrunchstore/images/log_gplus.png);
+  background-repeat: no-repeat;
+  background-position: 25% 2px, 40% 2px;
+}
+/* line 1423, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont .btn-cont.gplus div:nth-child(1) {
+  position: absolute;
+  left: -9000px;
+}
+/* line 1427, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont .btn-cont.gplus span {
+  color: #8b8b8b;
+  line-height: 40px;
+  position: relative;
+  padding: 8px 46px 9px 55%;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+}
+/* line 1439, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont .reg-btn {
+  cursor: pointer;
+  border: 1px solid #D5D4D4;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 40px;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: bold;
+  display: block;
+}
+/* line 1452, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont form.tw-email {
+  margin-bottom: 15px;
+  display: none;
+}
+/* line 1456, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont form.tw-email input {
+  box-shadow: none;
+  height: 26px;
+  width: 159px;
+  padding: 1px;
+  background-color: #FFFFFF;
+  border: 1px solid #C8CACB;
+  border-left: none;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 1468, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont form.tw-email label.tw-lb-email {
+  width: 90px;
+  background-color: #F5F5F5;
+  text-align: center;
+  color: #939393;
+  border: 1px solid #C8CACB;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  float: left;
+  height: 28px;
+  line-height: 28px;
+}
+/* line 1482, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont form.reg-user {
+  margin-bottom: 15px;
+}
+/* line 1485, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont form.reg-user input {
+  box-shadow: none;
+  height: 26px;
+  width: 159px;
+  padding: 1px;
+  background-color: #FFFFFF;
+  border: 1px solid #C8CACB;
+  border-left: none;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 1497, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-cont form.reg-user label.tw-lb-email {
+  width: 90px;
+  background-color: #F5F5F5;
+  text-align: center;
+  color: #939393;
+  border: 1px solid #C8CACB;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  float: left;
+  height: 28px;
+  line-height: 28px;
+}
+/* line 1511, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .sign_in_form_container {
+  display: none;
+  margin: 10px auto 100px auto;
+  width: 25%;
+}
+/* line 58, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bottom_form {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 60px;
+  font-size: 11px;
+  color: #fcfcfe;
+  width: 235px;
+  height: 20px;
+}
+/* line 67, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bottom_form .rememberme {
+  width: 50%;
+  float: left;
+  text-align: left;
+  position: relative;
+}
+/* line 72, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bottom_form .rememberme .msg {
+  line-height: 17px;
+}
+/* line 75, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bottom_form .rememberme .checkbox {
+  width: 15px;
+  height: 15px;
+  float: left;
+  border: 1px solid #fcfcfe;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+/* line 82, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bottom_form .rememberme .checkbox.selected {
+  background-image: url(/bundles/syscrunchstore/images/log_ok.png);
+  background-repeat: no-repeat;
+  background-size: 15px 14px;
+  background-position: center center;
+}
+/* line 91, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bottom_form .forgot_password {
+  width: 50%;
+  float: left;
+  text-align: right;
+  height: 17px;
+}
+/* line 96, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bottom_form .forgot_password a {
+  color: #fcfcfe;
+  line-height: 17px;
+}
+/* line 103, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bottom_terms {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 60px;
+  font-size: 11px;
+  color: #fcfcfe;
+  width: 251px;
+  height: 20px;
+  text-align: left !important;
+}
+/* line 113, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bottom_terms a {
+  text-decoration: underline !important;
+  color: #fcfcfe !important;
+}
+/* line 117, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bottom_terms img.warn-log {
+  width: 19px !important;
+  margin-right: 5px !important;
+  position: relative;
+  top: 20%;
+}
+/* line 124, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bar_button {
+  margin-bottom: 20px;
+}
+/* line 126, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bar_button .button_log_in {
+  background-color: #fedead;
+  border: 1px solid #f36f2f;
+  height: 40px;
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+  width: 235px;
+  margin-left: 42px;
+}
+/* line 137, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bar_button .button_log_in span {
+  line-height: 40px;
+}
+/* line 139, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bar_button .button_log_in span.text {
+  font-weight: bold;
+  color: #f28753;
+}
+/* line 143, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bar_button .button_log_in span.txt-conf-pass {
+  font-size: 14px;
+}
+/* line 147, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bar_button .button_log_in div.icon {
+  position: absolute;
+  left: 30px;
+  top: 5px;
+}
+/* line 151, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bar_button .button_log_in div.icon img {
+  width: 30px;
+  height: 30px;
+}
+/* line 155, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bar_button .button_log_in div.icon.disabled {
+  display: none;
+}
+/* line 159, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bar_button .button_log_in div.icon .icon-ok {
+  width: 17px !important;
+  height: 17px !important;
+  position: absolute;
+  top: 7px;
+  left: -20px;
+}
+/* line 167, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .bar_button .button_log_in .icon-separator {
+  position: absolute;
+  width: 1px;
+  border-right: 1px solid #DFC7A3;
+  top: 9px;
+  left: 68px;
+  height: 24px;
+}
+/* line 177, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .error_container {
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+/* line 181, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .error_container .message {
+  color: #fcfcfe;
+  font-weight: bold;
+  font-size: 16px;
+  background-image: url(/bundles/syscrunchstore/images/log_warning.png);
+  background-position: 45px;
+  background-repeat: no-repeat;
+}
+/* line 189, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .error_container .message.hidden {
+  display: none;
+}
+/* line 26, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .form_container input {
+  height: 35px;
+  -webkit-appearance: none;
+  border-radius: 6px;
+  padding: 0 15px;
+  font-size: 19px;
+  border: 1px solid #939192;
+  float: left;
+}
+/* line 35, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .form_container input::-webkit-input-placeholder {
+  color: #e2811a;
+}
+/* line 197, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .form_container .username_email {
+  height: 40px;
+  margin-bottom: 10px;
+  float: left;
+  padding-left: 40px;
+}
+/* line 203, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .form_container .password {
+  height: 40px;
+  margin-bottom: 10px;
+  float: left;
+  padding-left: 40px;
+}
+/* line 209, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .form_container .verificator {
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* line 217, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .form_container .verificator.error {
+  background-image: url(/bundles/syscrunchstore/images/log_error.png);
+}
+/* line 220, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .form_container .verificator.ok {
+  background-image: url(/bundles/syscrunchstore/images/log_ok.png);
+}
+/* line 223, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_form_container .form_container .verificator.hidden {
+  display: none;
+}
+/* line 1518, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container {
+  display: none;
+  margin: 10px auto 100px auto;
+  width: 25%;
+}
+/* line 58, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bottom_form {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 60px;
+  font-size: 11px;
+  color: #fcfcfe;
+  width: 235px;
+  height: 20px;
+}
+/* line 67, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bottom_form .rememberme {
+  width: 50%;
+  float: left;
+  text-align: left;
+  position: relative;
+}
+/* line 72, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bottom_form .rememberme .msg {
+  line-height: 17px;
+}
+/* line 75, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bottom_form .rememberme .checkbox {
+  width: 15px;
+  height: 15px;
+  float: left;
+  border: 1px solid #fcfcfe;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+/* line 82, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bottom_form .rememberme .checkbox.selected {
+  background-image: url(/bundles/syscrunchstore/images/log_ok.png);
+  background-repeat: no-repeat;
+  background-size: 15px 14px;
+  background-position: center center;
+}
+/* line 91, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bottom_form .forgot_password {
+  width: 50%;
+  float: left;
+  text-align: right;
+  height: 17px;
+}
+/* line 96, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bottom_form .forgot_password a {
+  color: #fcfcfe;
+  line-height: 17px;
+}
+/* line 103, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bottom_terms {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 60px;
+  font-size: 11px;
+  color: #fcfcfe;
+  width: 251px;
+  height: 20px;
+  text-align: left !important;
+}
+/* line 113, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bottom_terms a {
+  text-decoration: underline !important;
+  color: #fcfcfe !important;
+}
+/* line 117, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bottom_terms img.warn-log {
+  width: 19px !important;
+  margin-right: 5px !important;
+  position: relative;
+  top: 20%;
+}
+/* line 124, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bar_button {
+  margin-bottom: 20px;
+}
+/* line 126, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bar_button .button_log_in {
+  background-color: #fedead;
+  border: 1px solid #f36f2f;
+  height: 40px;
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+  width: 235px;
+  margin-left: 42px;
+}
+/* line 137, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bar_button .button_log_in span {
+  line-height: 40px;
+}
+/* line 139, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bar_button .button_log_in span.text {
+  font-weight: bold;
+  color: #f28753;
+}
+/* line 143, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bar_button .button_log_in span.txt-conf-pass {
+  font-size: 14px;
+}
+/* line 147, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bar_button .button_log_in div.icon {
+  position: absolute;
+  left: 30px;
+  top: 5px;
+}
+/* line 151, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bar_button .button_log_in div.icon img {
+  width: 30px;
+  height: 30px;
+}
+/* line 155, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bar_button .button_log_in div.icon.disabled {
+  display: none;
+}
+/* line 159, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bar_button .button_log_in div.icon .icon-ok {
+  width: 17px !important;
+  height: 17px !important;
+  position: absolute;
+  top: 7px;
+  left: -20px;
+}
+/* line 167, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .bar_button .button_log_in .icon-separator {
+  position: absolute;
+  width: 1px;
+  border-right: 1px solid #DFC7A3;
+  top: 9px;
+  left: 68px;
+  height: 24px;
+}
+/* line 177, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .error_container {
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+/* line 181, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .error_container .message {
+  color: #fcfcfe;
+  font-weight: bold;
+  font-size: 16px;
+  background-image: url(/bundles/syscrunchstore/images/log_warning.png);
+  background-position: 45px;
+  background-repeat: no-repeat;
+}
+/* line 189, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .error_container .message.hidden {
+  display: none;
+}
+/* line 26, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .form_container input {
+  height: 35px;
+  -webkit-appearance: none;
+  border-radius: 6px;
+  padding: 0 15px;
+  font-size: 19px;
+  border: 1px solid #939192;
+  float: left;
+}
+/* line 35, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .form_container input::-webkit-input-placeholder {
+  color: #e2811a;
+}
+/* line 197, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .form_container .username_email {
+  height: 40px;
+  margin-bottom: 10px;
+  float: left;
+  padding-left: 40px;
+}
+/* line 203, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .form_container .password {
+  height: 40px;
+  margin-bottom: 10px;
+  float: left;
+  padding-left: 40px;
+}
+/* line 209, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .form_container .verificator {
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* line 217, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .form_container .verificator.error {
+  background-image: url(/bundles/syscrunchstore/images/log_error.png);
+}
+/* line 220, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .form_container .verificator.ok {
+  background-image: url(/bundles/syscrunchstore/images/log_ok.png);
+}
+/* line 223, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .sign_in_twitter_form_container .form_container .verificator.hidden {
+  display: none;
+}
+/* line 1527, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg div#role-div {
+  height: 35px;
+  margin-bottom: 15px;
+  position: relative;
+  font-size: 11px;
+  color: #fcfcfe;
+  width: 100%;
+  text-align: center;
+}
+/* line 41, ../../../../../../Users/jonathan/projects/wrk/theming-store-symfony/src/SysCrunch/StoreBundle/Resources/styles/imports/mixins.scss */
+body.browse div.main-body-login .form-reg div#role-div select {
+  height: 35px;
+  -webkit-appearance: none;
+  border-radius: 6px;
+  padding: 0 50px 0 15px;
+  font-size: 19px;
+  border: 1px solid #f7821b;
+  color: #8a8a8a;
+  background-color: #fcfdff;
+  width: 100%;
+  background-image: url(/bundles/syscrunchstore/images/log_arrow_circle.png), url(/bundles/syscrunchstore/images/fancy_select_icon_bg.png);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px), 100% center;
+}
+/* line 1538, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg div#role-div .rememberme {
+  width: 50%;
+  float: left;
+  text-align: left;
+  position: relative;
+}
+/* line 1543, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg div#role-div .rememberme .msg {
+  line-height: 17px;
+}
+/* line 1546, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg div#role-div .rememberme .checkbox {
+  width: 15px;
+  height: 15px;
+  float: left;
+  border: 1px solid #fcfcfe;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+/* line 1553, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg div#role-div .rememberme .checkbox.selected {
+  background-image: url(/bundles/syscrunchstore/images/log_ok.png);
+  background-repeat: no-repeat;
+  background-size: 15px 14px;
+  background-position: center center;
+}
+/* line 1562, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg div#role-div .forgot_password {
+  width: 50%;
+  float: left;
+  text-align: right;
+  height: 17px;
+}
+/* line 1567, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg div#role-div .forgot_password a {
+  color: #fcfcfe;
+  line-height: 17px;
+}
+/* line 1574, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg .bar_button {
+  margin-bottom: 20px;
+}
+/* line 1576, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg .bar_button .button_log_in {
+  background-color: #fedead;
+  border: 1px solid #f36f2f;
+  height: 40px;
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+  width: 250px;
+  margin-left: 40px;
+}
+/* line 1587, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg .bar_button .button_log_in span {
+  line-height: 40px;
+}
+/* line 1589, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg .bar_button .button_log_in span.text {
+  font-weight: bold;
+  color: #f28753;
+}
+/* line 1594, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg .bar_button .button_log_in div.icon {
+  position: absolute;
+  left: 30px;
+  top: 5px;
+}
+/* line 1598, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg .bar_button .button_log_in div.icon img {
+  width: 30px;
+  height: 30px;
+}
+/* line 1602, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg .bar_button .button_log_in div.icon.disabled {
+  display: none;
+}
+/* line 1610, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg .form_container input {
+  height: 35px;
+  -webkit-appearance: none;
+  border-radius: 6px;
+  padding: 0 15px;
+  font-size: 19px;
+  border: 1px solid #939192;
+  float: left;
+}
+/* line 1619, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg .form_container input::-webkit-input-placeholder {
+  color: #e2811a;
+}
+/* line 1623, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg .form_container .username_email {
+  height: 40px;
+  margin-bottom: 10px;
+  float: left;
+  padding-left: 40px;
+}
+/* line 1629, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg .form_container .password {
+  height: 40px;
+  margin-bottom: 10px;
+  float: left;
+  padding-left: 40px;
+}
+/* line 1635, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg .form_container .verificator {
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* line 1643, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg .form_container .verificator.error {
+  background-image: url(/bundles/syscrunchstore/images/log_error.png);
+}
+/* line 1646, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg .form_container .verificator.ok {
+  background-image: url(/bundles/syscrunchstore/images/log_ok.png);
+}
+/* line 1649, assetic_compasscKL0dX.scss */
+body.browse div.main-body-login .form-reg .form_container .verificator.hidden {
+  display: none;
+}
+/* line 1658, assetic_compasscKL0dX.scss */
+body.browse .clear {
+  clear: both;
+}
+/* line 1662, assetic_compasscKL0dX.scss */
+body.browse {
+  font-family: Corbel, Arial, Helvetica, "Nimbus Sans L", "Liberation Sans", sans-serif;
+}
+/* line 1668, assetic_compasscKL0dX.scss */
+body.browse form.jq-form-to-validate input.error {
+  border: 1px dotted red;
+}
+/* line 1672, assetic_compasscKL0dX.scss */
+body.browse form.jq-form-to-validate label.error {
+  color: red;
+}
+/* line 1677, assetic_compasscKL0dX.scss */
+body.browse .error_container {
+  margin-bottom: 20px;
+}
+/* line 1679, assetic_compasscKL0dX.scss */
+body.browse .error_container .message {
+  color: #fcfcfe;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 1684, assetic_compasscKL0dX.scss */
+body.browse .error_container .message img {
+  width: 25px !important;
+  top: 8px !important;
+  position: relative !important;
+  left: -10px !important;
+}
+
+/* line 1694, assetic_compasscKL0dX.scss */
+#tw_email {
+  display: none;
+}
+
+/* line 1698, assetic_compasscKL0dX.scss */
+body.cart {
+  margin: 0;
+}
+/* line 1700, assetic_compasscKL0dX.scss */
+body.cart .upperMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 1px 0;
+}
+/* line 1704, assetic_compasscKL0dX.scss */
+body.cart .upperMenu li {
+  float: left;
+  width: 95px;
+  border-left: 1px solid #9c9c9c;
+  text-align: center;
+}
+/* line 1709, assetic_compasscKL0dX.scss */
+body.cart .upperMenu li a {
+  color: #A7BFC8;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 1714, assetic_compasscKL0dX.scss */
+body.cart .upperMenu li:last-child {
+  float: none;
+  clear: left;
+}
+/* line 1720, assetic_compasscKL0dX.scss */
+body.cart h1 {
+  color: #ffffff;
+  background-color: #42AFD0;
+  padding: 20px 0 70px 0;
+  margin-bottom: -50px;
+}
+/* line 1726, assetic_compasscKL0dX.scss */
+body.cart #content {
+  background-color: #ffffff;
+  width: 1160px;
+  margin: 0 auto;
+}
+/* line 1730, assetic_compasscKL0dX.scss */
+body.cart #content .steps {
+  margin: 0;
+  padding: 0;
+}
+/* line 1733, assetic_compasscKL0dX.scss */
+body.cart #content .steps li {
+  float: left;
+}
+/* line 1735, assetic_compasscKL0dX.scss */
+body.cart #content .steps li:last-child {
+  float: none;
+  list-style: none;
+  clear: left;
+}
+/* line 1742, assetic_compasscKL0dX.scss */
+body.cart #content .cartContent {
+  border-top: 1px solid #e2e2e2;
+}
+/* line 1747, assetic_compasscKL0dX.scss */
+body.cart #wrapper {
+  background: #000;
+}
